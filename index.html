@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sheetal Patangay | Data Scientist &amp; Project Manager</title>
+<meta name="description" content="Sheetal Patangay leads projects, shapes products and builds with data. Data Scientist and project manager at Rensel Consulting, CAPM certified, Amazon alum and Grace Hopper Celebration 2026 speaker.">
+<meta property="og:title" content="Sheetal Patangay | Data Scientist &amp; Project Manager">
+<meta property="og:description" content="I lead projects, shape products, and build with data, so teams can see clearly and decide faster.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://patangaysheetal.github.io/">
+<meta property="og:url" content="https://patangaysheetal.github.io/">
+<meta property="og:image" content="https://patangaysheetal.github.io/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+
+<meta name="theme-color" content="#4A1A34" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#2B1221" media="(prefers-color-scheme: dark)">
+<script>
+  try { var t = localStorage.getItem("sp-theme"); if (t === "light" || t === "dark") document.documentElement.classList.add("sp-" + t); } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&family=Carlito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FBF4F7;
+  --bg-alt: #F4E3EA;
+  --surface: #FFFFFF;
+  --ink: #2D1220;
+  --ink-soft: #6C4B5B;
+  --plum: #5B2241;
+  --plum-strong: #431630;
+  --rose: #A24E74;
+  --line: rgba(91, 34, 65, 0.16);
+  --on-plum: #FCEFF5;
+  --band: #4A1A34;
+  --band-ink: #FBEAF1;
+  --band-soft: #E2B6C9;
+  --band-line: rgba(251, 234, 241, 0.22);
+  --band-deep: #3C1229;
+  --bar: #5B2241;
+  --bar-muted: #DDB9C9;
+  --header-bg: rgba(251, 244, 247, 0.82);
+
+  /* Headings: Times New Roman. Body: Calibri. Tinos and Carlito are metric-matched
+     stand-ins for devices that don't have them installed (e.g. Android). */
+  --serif: "Times New Roman", Tinos, Times, serif;
+  --sans: Calibri, Carlito, "Segoe UI", system-ui, sans-serif;
+  --gutter: clamp(20px, 5vw, 56px);
+  --radius: 14px;
+  color-scheme: light;
+
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not(.sp-light) {
+    --bg: #180B12;
+    --bg-alt: #22111B;
+    --surface: #2A1522;
+    --ink: #F7E9EF;
+    --ink-soft: #C9A7B7;
+    --plum: #EBB8CC;
+    --plum-strong: #F6D3E0;
+    --rose: #E59BBB;
+    --line: rgba(235, 184, 204, 0.16);
+    --on-plum: #2A0F1D;
+    --band: #2B1221;
+    --band-ink: #F7E9EF;
+    --band-soft: #D9A9BE;
+    --band-line: rgba(247, 233, 239, 0.16);
+    --band-deep: #200C18;
+    --bar: #EBB8CC;
+    --bar-muted: #5C3548;
+    --header-bg: rgba(24, 11, 18, 0.8);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]:not(.sp-light), :root.sp-dark {
+  --bg: #180B12;
+  --bg-alt: #22111B;
+  --surface: #2A1522;
+  --ink: #F7E9EF;
+  --ink-soft: #C9A7B7;
+  --plum: #EBB8CC;
+  --plum-strong: #F6D3E0;
+  --rose: #E59BBB;
+  --line: rgba(235, 184, 204, 0.16);
+  --on-plum: #2A0F1D;
+  --band: #2B1221;
+  --band-ink: #F7E9EF;
+  --band-soft: #D9A9BE;
+  --band-line: rgba(247, 233, 239, 0.16);
+  --band-deep: #200C18;
+  --bar: #EBB8CC;
+  --bar-muted: #5C3548;
+  --header-bg: rgba(24, 11, 18, 0.8);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  background: var(--bg);
+  scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 124px);
+  -webkit-text-size-adjust: 100%;
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.15rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+h1, h2, h3, h4 { margin: 0; font-weight: 400; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+figure { margin: 0; }
+:focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; border-radius: 4px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: 12px; top: -60px; background: var(--plum); color: var(--on-plum); padding: 10px 16px; border-radius: 8px; z-index: 100; text-decoration: none; }
+.skip:focus { top: calc(env(safe-area-inset-top, 0px) + 12px); }
+
+.wrap { width: min(1200px, 100% - 2 * var(--gutter)); margin-inline: auto; }
+
+/* ---------- Buttons & links ---------- */
+.btn {
+  display: inline-flex; align-items: center; gap: .5em;
+  padding: .85em 1.5em; border-radius: 999px;
+  background: var(--plum); color: var(--on-plum);
+  font: 600 .95rem/1 var(--sans); letter-spacing: .01em;
+  text-decoration: none; border: 1px solid var(--plum);
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.btn:hover { background: var(--plum-strong); border-color: var(--plum-strong); }
+.btn-ghost { background: transparent; color: var(--plum); border-color: var(--line); }
+.btn-ghost:hover { background: var(--bg-alt); color: var(--plum); border-color: var(--plum); }
+.btn-small { padding: .6em 1.1em; font-size: .875rem; }
+.text-link {
+  color: var(--plum); font-weight: 600; text-decoration: underline;
+  text-decoration-thickness: 1px; text-underline-offset: .25em;
+  text-decoration-color: color-mix(in srgb, var(--plum) 40%, transparent);
+}
+.text-link:hover { text-decoration-color: var(--plum); }
+
+/* ---------- Header: two-tier page ribbon ---------- */
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--band); color: var(--band-ink); }
+.ribbon-top { display: flex; align-items: center; gap: 16px; min-height: 56px; }
+.mark { font-family: var(--serif); font-size: 1.45rem; text-decoration: none; color: var(--band-ink); white-space: nowrap; }
+.ribbon-motto { margin-left: auto; font-family: var(--serif); font-style: italic; font-size: 1.2rem; color: var(--band-soft); white-space: nowrap; }
+.ribbon-nav { background: var(--band-deep); border-top: 1px solid var(--band-line); }
+.ribbon-list {
+  width: min(1200px, 100% - 2 * var(--gutter)); margin-inline: auto;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; padding: 9px 0;
+}
+.ribbon-list li { position: relative; }
+.ribbon-list a {
+  display: block; padding: 8px 18px; border-radius: 999px; text-decoration: none; white-space: nowrap;
+  color: var(--band-ink); font-size: 1.02rem; line-height: 1.2; border: 1px solid var(--band-line);
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.ribbon-list a:hover { background: color-mix(in srgb, var(--band-ink) 14%, transparent); border-color: color-mix(in srgb, var(--band-ink) 40%, transparent); }
+.ribbon-list a[aria-current="page"] { background: var(--band-ink); color: var(--band); border-color: var(--band-ink); font-weight: 700; }
+.nav-peek {
+  position: absolute; top: calc(100% + 12px); left: 50%; width: 232px; z-index: 5;
+  padding: 12px 14px; border-radius: 12px; background: var(--surface); color: var(--ink);
+  border: 1px solid var(--line); box-shadow: 0 14px 34px -12px rgba(45, 18, 32, .4);
+  font-size: .95rem; font-weight: 400; line-height: 1.4; white-space: normal; text-align: left;
+  opacity: 0; visibility: hidden; transform: translate(-50%, 4px); pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease, visibility 0s linear .18s;
+}
+.nav-peek::before {
+  content: ""; position: absolute; top: -6px; left: 50%; width: 10px; height: 10px; margin-left: -5px;
+  background: var(--surface); border-left: 1px solid var(--line); border-top: 1px solid var(--line); transform: rotate(45deg);
+}
+.ribbon-list .peek-start .nav-peek { left: 0; transform: translate(0, 4px); }
+.ribbon-list .peek-start .nav-peek::before { left: 28px; }
+.ribbon-list .peek-end .nav-peek { left: auto; right: 0; transform: translate(0, 4px); }
+.ribbon-list .peek-end .nav-peek::before { left: auto; right: 28px; }
+@media (hover: hover) {
+  .ribbon-list li:hover .nav-peek, .ribbon-list a:focus-visible .nav-peek {
+    opacity: 1; visibility: visible; transform: translate(-50%, 0);
+    transition: opacity .18s ease .12s, transform .18s ease .12s, visibility 0s linear .12s;
+  }
+  .ribbon-list .peek-start:hover .nav-peek, .ribbon-list .peek-start a:focus-visible .nav-peek,
+  .ribbon-list .peek-end:hover .nav-peek, .ribbon-list .peek-end a:focus-visible .nav-peek { transform: translate(0, 0); }
+}
+.ribbon-list li[data-current] .nav-peek { display: none; }
+.icon-btn {
+  width: 38px; height: 38px; flex: none; display: grid; place-items: center; border-radius: 999px;
+  border: 1px solid var(--band-line); background: transparent; color: var(--band-ink); cursor: pointer;
+}
+.icon-btn:hover { background: color-mix(in srgb, var(--band-ink) 12%, transparent); }
+.icon-btn svg { width: 18px; height: 18px; }
+.theme-toggle .sun { display: none; }
+:root[data-theme="dark"]:not(.sp-light) .theme-toggle .sun, :root.sp-dark .theme-toggle .sun { display: block; }
+:root[data-theme="dark"]:not(.sp-light) .theme-toggle .moon, :root.sp-dark .theme-toggle .moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not(.sp-light) .theme-toggle .sun { display: block; }
+  :root:not([data-theme="light"]):not(.sp-light) .theme-toggle .moon { display: none; }
+}
+/* Phones: one swipeable row of page buttons */
+@media (max-width: 640px) {
+  .ribbon-top { min-height: 50px; }
+  .mark { font-size: 1.25rem; }
+  .ribbon-motto { font-size: 1.05rem; }
+  .ribbon-list {
+    width: 100%; flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; gap: 6px;
+    padding: 8px var(--gutter); scroll-snap-type: x proximity; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent);
+  }
+  .ribbon-list::-webkit-scrollbar { display: none; }
+  .ribbon-list li { scroll-snap-align: start; }
+  .ribbon-list a { padding: 7px 15px; font-size: .98rem; }
+  .nav-peek { display: none; }
+}
+@media (max-width: 400px) { .ribbon-motto { display: none; } .ribbon-top .theme-toggle { margin-left: auto; } }
+
+/* ---------- Hero ---------- */
+.page-home { padding-top: clamp(32px, 6vw, 72px); }
+.hero-grid {
+  display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr);
+  gap: clamp(24px, 4vw, 56px); align-items: end;
+}
+.hero-text { position: relative; z-index: 2; padding-bottom: clamp(8px, 2vw, 28px); }
+.hero-name {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(3.75rem, 11.2vw, 10.25rem);
+  line-height: .92; letter-spacing: -.02em; color: var(--plum);
+}
+.hero-name .line { display: block; overflow: hidden; padding-bottom: .2em; margin-bottom: -.14em; }
+.hero-name .line > span { display: inline-block; }
+.hero-lede {
+  font-family: var(--serif); font-size: clamp(1.35rem, 2.1vw, 1.75rem);
+  line-height: 1.32; margin-top: clamp(24px, 3vw, 36px); max-width: 30ch; color: var(--ink);
+}
+.hero-now { margin-top: 16px; color: var(--ink-soft); max-width: 46ch; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+
+.hero-portrait { position: relative; z-index: 1; }
+.arch {
+  border-radius: 50% 50% 18px 18px / 40% 40% 18px 18px;
+  overflow: hidden; background: var(--bg-alt);
+  aspect-ratio: 4 / 5;
+}
+.arch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+.hero-portrait figcaption {
+  display: flex; align-items: center; gap: 14px; margin-top: 16px;
+  font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--ink-soft);
+}
+.hero-portrait figcaption::before { content: ""; height: 1px; flex: 1; background: var(--line); }
+
+.facts {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: clamp(48px, 7vw, 88px); border-top: 1px solid var(--line);
+}
+.facts li { padding: 22px 24px 4px 0; }
+.facts li + li { padding-left: 24px; border-left: 1px solid var(--line); }
+.facts strong { display: block; font-family: var(--serif); font-weight: 400; font-size: 1.2rem; line-height: 1.25; color: var(--plum); }
+.facts span { display: block; margin-top: 6px; font-size: .9rem; line-height: 1.45; color: var(--ink-soft); }
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-portrait { order: -1; width: min(340px, 72%); }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .facts li:nth-child(3) { padding-left: 0; border-left: 0; }
+  .facts li:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+@media (max-width: 520px) {
+  .facts { grid-template-columns: 1fr; }
+  .facts li, .facts li + li { padding: 18px 0 16px; border-left: 0; }
+  .facts li + li { border-top: 1px solid var(--line); }
+}
+
+/* Page-load moment: the name rises into place, once. */
+@media (prefers-reduced-motion: no-preference) {
+  :root:not(.seen) .hero-name .line > span { animation: rise 1s cubic-bezier(.2, .75, .15, 1) both; }
+  :root:not(.seen) .hero-name .line:nth-child(2) > span { animation-delay: .1s; }
+  :root:not(.seen) .hero-portrait .arch { animation: settle 1.3s cubic-bezier(.2, .75, .15, 1) both; }
+  :root:not(.seen) .hero-lede, :root:not(.seen) .hero-now, :root:not(.seen) .hero-ctas { animation: appear .8s ease both .45s; }
+}
+@keyframes rise { from { transform: translateY(105%); } to { transform: none; } }
+@keyframes settle { from { opacity: 0; transform: scale(1.04); } to { opacity: 1; transform: none; } }
+@keyframes appear { from { opacity: 0; } to { opacity: 1; } }
+
+/* ---------- Sections ---------- */
+.section { padding: clamp(72px, 10vw, 136px) 0; }
+.section-alt { background: var(--bg-alt); }
+.section-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 56px; align-items: end; margin-bottom: clamp(36px, 5vw, 64px); }
+.section-head h2, .h2 {
+  font-family: var(--serif); font-weight: 400; color: var(--plum);
+  font-size: clamp(2.4rem, 5.2vw, 4.25rem); line-height: 1; letter-spacing: -.015em;
+}
+.section-head p { color: var(--ink-soft); max-width: 44ch; justify-self: end; }
+@media (max-width: 760px) {
+  .section-head { grid-template-columns: 1fr; }
+  .section-head p { justify-self: start; }
+}
+
+/* ---------- About ---------- */
+.about-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.about-photo { border-radius: var(--radius); overflow: hidden; aspect-ratio: 4 / 5; background: var(--bg-alt); }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; }
+.about-text .h2 { margin-bottom: 28px; }
+.about-text .intro { font-family: var(--serif); font-size: clamp(1.3rem, 1.9vw, 1.6rem); line-height: 1.4; max-width: 34ch; }
+.about-text p + p { margin-top: 18px; color: var(--ink-soft); max-width: 58ch; }
+.disciplines { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(28px, 4vw, 56px); margin-top: clamp(56px, 7vw, 88px); }
+.discipline { padding-top: 22px; border-top: 2px solid var(--plum); }
+.discipline h3 { font-family: var(--serif); font-size: 1.5rem; line-height: 1.2; color: var(--plum); }
+.discipline p { margin-top: 12px; color: var(--ink-soft); }
+@media (max-width: 860px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-photo { max-width: 420px; aspect-ratio: 5 / 4; }
+  .about-photo img { object-position: 50% 30%; }
+  .disciplines { grid-template-columns: 1fr; }
+}
+
+/* ---------- Experience timeline ---------- */
+.timeline > li {
+  display: grid; grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+  gap: 16px clamp(28px, 5vw, 72px);
+  padding: clamp(32px, 4vw, 48px) 0; border-top: 1px solid var(--line);
+}
+.timeline > li:last-child { border-bottom: 1px solid var(--line); }
+.org-meta .years { font-size: .9rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.org-meta h3 { font-family: var(--serif); font-size: clamp(1.6rem, 2.6vw, 2.1rem); line-height: 1.1; color: var(--plum); margin-top: 6px; }
+.org-meta .org-note { margin-top: 8px; font-size: .925rem; color: var(--ink-soft); max-width: 28ch; }
+.role + .role { margin-top: 28px; }
+.role h4 { font-size: 1.125rem; font-weight: 600; line-height: 1.35; }
+.role .when { font-size: .9rem; color: var(--ink-soft); margin-top: 2px; font-variant-numeric: tabular-nums; }
+.role ul { margin-top: 12px; display: grid; gap: 8px; max-width: 64ch; }
+.role li { position: relative; padding-left: 20px; }
+.role li::before { content: ""; position: absolute; left: 0; top: .72em; width: 8px; height: 1px; background: var(--rose); }
+.role-path { position: relative; padding-left: 22px; }
+.role-path::before { content: ""; position: absolute; left: 3px; top: 10px; bottom: 10px; width: 1px; background: var(--line); }
+.role-path .role::before { content: ""; position: absolute; left: -22px; top: .45em; width: 7px; height: 7px; border-radius: 50%; background: var(--bg); border: 1.5px solid var(--plum); }
+.role-path .role:first-child::before { background: var(--plum); }
+.role-path .role { position: relative; }
+.compact-roles { display: grid; gap: 0; }
+.compact-roles li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 24px; padding: 14px 0; border-top: 1px dashed var(--line); }
+.compact-roles li:first-child { border-top: 0; padding-top: 0; }
+.compact-roles .r-title { font-weight: 600; }
+.compact-roles .r-org { color: var(--ink-soft); font-size: .95rem; }
+.compact-roles .r-when { color: var(--ink-soft); font-size: .9rem; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.compact-roles .r-note { grid-column: 1 / -1; font-size: .95rem; color: var(--ink-soft); }
+@media (max-width: 760px) {
+  .timeline > li { grid-template-columns: 1fr; }
+  .compact-roles li { grid-template-columns: 1fr; }
+  .compact-roles .r-when { text-align: left; }
+}
+
+/* ---------- Work ---------- */
+.case {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px); align-items: center;
+  padding: clamp(28px, 4vw, 56px); border-radius: 22px; background: var(--surface);
+  border: 1px solid var(--line);
+}
+.case + .case { margin-top: 24px; }
+.case-kicker { font-size: .9rem; color: var(--rose); font-weight: 600; }
+.case h3 { font-family: var(--serif); font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.1; letter-spacing: -.015em; color: var(--plum); margin-top: 10px; }
+.case p { margin-top: 16px; color: var(--ink-soft); max-width: 56ch; }
+.case p.case-lead { color: var(--ink); }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.tags li { font-size: .825rem; font-weight: 500; padding: 5px 12px; border-radius: 999px; background: var(--bg-alt); color: var(--ink-soft); }
+.case .text-link { display: inline-block; margin-top: 22px; }
+
+.steps { counter-reset: step; display: grid; gap: 0; position: relative; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 40px 1fr; gap: 14px; padding: 10px 0; position: relative; }
+.steps li::before {
+  content: counter(step); width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center; font: 600 .85rem/1 var(--sans);
+  border: 1.5px solid var(--plum); color: var(--plum); background: var(--surface); position: relative; z-index: 1;
+}
+.steps li:not(:last-child)::after { content: ""; position: absolute; left: 16px; top: 42px; bottom: -10px; width: 1px; background: var(--line); }
+.steps b { display: block; font-weight: 600; color: var(--ink); line-height: 1.3; margin-top: 5px; }
+.steps span { display: block; font-size: .925rem; color: var(--ink-soft); line-height: 1.45; }
+
+.chart { padding: clamp(20px, 3vw, 32px); border-radius: 16px; background: var(--bg-alt); }
+.chart figcaption { font-family: var(--serif); font-size: 1.2rem; color: var(--plum); }
+.chart .chart-note { font-family: var(--sans); font-size: .85rem; color: var(--ink-soft); margin-top: 4px; }
+.bars { margin-top: 24px; display: grid; gap: 18px; }
+.bar-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; align-items: baseline; }
+.bar-label { font-size: .95rem; font-weight: 500; }
+.bar-val { font-family: var(--serif); font-size: 1.25rem; color: var(--plum); font-variant-numeric: tabular-nums; }
+.bar-track { grid-column: 1 / -1; height: 12px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 7%, transparent); overflow: hidden; }
+.bar { display: block; height: 100%; width: var(--v); border-radius: 999px; background: var(--bar-muted); }
+.bar-row.is-best .bar { background: var(--bar); }
+.bar-row.is-best .bar-label { font-weight: 600; }
+.axis { display: flex; justify-content: space-between; font-size: .8rem; color: var(--ink-soft); margin-top: 10px; font-variant-numeric: tabular-nums; }
+
+.more-work { margin-top: clamp(40px, 6vw, 64px); border-top: 1px solid var(--line); }
+.more-work a {
+  display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) auto; gap: 6px 32px; align-items: baseline;
+  padding: 22px 4px; border-bottom: 1px solid var(--line); text-decoration: none;
+  transition: background-color .2s ease;
+}
+.more-work a:hover { background: color-mix(in srgb, var(--bg-alt) 70%, transparent); }
+.more-work .w-title { font-family: var(--serif); font-size: 1.35rem; line-height: 1.2; color: var(--plum); }
+.more-work .w-desc { display: block; font-family: var(--sans); font-size: .95rem; color: var(--ink-soft); margin-top: 4px; }
+.more-work .w-tools { font-size: .9rem; color: var(--ink-soft); }
+.more-work .w-go { font-size: .9rem; font-weight: 600; color: var(--plum); text-decoration: underline; text-underline-offset: .25em; text-decoration-thickness: 1px; }
+.work-foot { margin-top: 28px; }
+@media (max-width: 860px) {
+  .case { grid-template-columns: 1fr; }
+  .case-flip .case-visual { order: 2; }
+  .more-work a { grid-template-columns: 1fr; }
+}
+
+/* ---------- Writing ---------- */
+.articles { border-top: 1px solid var(--line); }
+.articles a {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 32px; align-items: baseline;
+  padding: clamp(20px, 3vw, 30px) 0; border-bottom: 1px solid var(--line); text-decoration: none;
+}
+.articles .a-title { font-family: var(--serif); font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.15; letter-spacing: -.01em; color: var(--plum); transition: color .2s ease; }
+.articles a:hover .a-title { color: var(--rose); }
+.articles .a-src { font-size: .9rem; color: var(--ink-soft); white-space: nowrap; }
+@media (max-width: 600px) { .articles a { grid-template-columns: 1fr; } }
+
+/* ---------- Recognition & community ---------- */
+.awards { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 48px); }
+.award .photo { border-radius: var(--radius); overflow: hidden; aspect-ratio: 3 / 2; background: var(--bg); }
+.award .photo img { width: 100%; height: 100%; object-fit: cover; }
+.award .year { margin-top: 22px; font-size: .9rem; color: var(--ink-soft); }
+.award h3 { font-family: var(--serif); font-size: clamp(1.6rem, 2.6vw, 2.15rem); line-height: 1.12; color: var(--plum); margin-top: 4px; }
+.award p { margin-top: 10px; color: var(--ink-soft); max-width: 48ch; }
+.award p strong { color: var(--ink); font-weight: 600; }
+.community { margin-top: clamp(64px, 8vw, 104px); display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 5vw, 72px); }
+.community .h2 { font-size: clamp(2rem, 4vw, 3.25rem); }
+.community-intro { margin-top: 16px; color: var(--ink-soft); max-width: 38ch; }
+.roles-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px 40px; }
+.roles-grid li { padding-top: 18px; border-top: 1px solid var(--line); }
+.roles-grid h3 { font-size: 1.1rem; font-weight: 600; line-height: 1.35; }
+.roles-grid .org { font-size: .925rem; color: var(--rose); margin-top: 2px; font-weight: 500; }
+.roles-grid p:not(.org) { margin-top: 8px; color: var(--ink-soft); font-size: .975rem; }
+@media (max-width: 860px) {
+  .awards, .community { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) { .roles-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Education ---------- */
+.edu-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+.degrees li { padding: 26px 0; border-top: 1px solid var(--line); }
+.degrees li:first-child { border-top: 0; padding-top: 0; }
+.degrees .when { font-size: .9rem; color: var(--ink-soft); }
+.degrees h3 { font-family: var(--serif); font-size: clamp(1.5rem, 2.4vw, 1.9rem); line-height: 1.15; color: var(--plum); margin-top: 4px; }
+.degrees .school { font-weight: 600; margin-top: 6px; }
+.degrees p:last-child { color: var(--ink-soft); margin-top: 8px; max-width: 56ch; }
+.creds { margin-top: 40px; padding: 26px 28px; border-radius: var(--radius); background: var(--bg-alt); }
+.creds h3 { font-family: var(--serif); font-size: 1.4rem; color: var(--plum); }
+.creds ul { margin-top: 14px; display: grid; gap: 10px; }
+.creds li { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.creds li span:last-child { color: var(--ink-soft); font-size: .925rem; }
+.creds .text-link { display: inline-block; margin-top: 18px; font-size: .95rem; }
+.edu-photo .arch img { object-position: 50% 30%; }
+@media (max-width: 860px) {
+  .edu-grid { grid-template-columns: 1fr; }
+  .edu-photo { order: -1; width: min(300px, 70%); }
+}
+
+/* ---------- Beyond work ---------- */
+.beyond-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.beyond-text .h2 { margin-bottom: 28px; }
+.interests { display: grid; gap: 20px; }
+.interests li { display: grid; grid-template-columns: minmax(120px, 160px) minmax(0, 1fr); gap: 4px 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+.interests b { font-family: var(--serif); font-weight: 400; font-size: 1.3rem; color: var(--plum); line-height: 1.2; }
+.interests span { color: var(--ink-soft); }
+.beyond-photo { border-radius: var(--radius); overflow: hidden; aspect-ratio: 3 / 4; background: var(--bg-alt); }
+.beyond-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+@media (max-width: 860px) {
+  .beyond-grid { grid-template-columns: 1fr; }
+  .beyond-photo { max-width: 380px; }
+}
+@media (max-width: 520px) { .interests li { grid-template-columns: 1fr; } }
+
+/* ---------- Contact page ---------- */
+.page-contact .contact-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: clamp(32px, 6vw, 96px); align-items: end; }
+.page-contact h1 { font-family: var(--serif); font-size: clamp(3.25rem, 9vw, 7.5rem); line-height: .95; letter-spacing: -.02em; color: var(--plum); }
+.page-contact .lead { margin-top: 24px; max-width: 46ch; color: var(--ink-soft); font-size: 1.2rem; }
+.email-link {
+  display: inline-block; margin-top: 36px; font-family: var(--serif);
+  font-size: clamp(1.4rem, 3.4vw, 2.6rem); color: var(--plum); text-decoration: underline;
+  text-decoration-thickness: 1px; text-underline-offset: .2em; text-decoration-color: var(--line);
+  overflow-wrap: anywhere;
+}
+.email-link:hover { text-decoration-color: var(--plum); }
+.contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.contact-links a {
+  display: inline-flex; align-items: center; gap: 10px; padding: .7em 1.3em; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 700; font-size: 1rem;
+}
+.contact-links a:hover { background: var(--bg-alt); border-color: var(--plum); }
+.contact-links svg { width: 18px; height: 18px; }
+.contact-photo .arch img { object-position: 50% 15%; }
+@media (max-width: 860px) {
+  .page-contact .contact-grid { grid-template-columns: 1fr; }
+  .contact-photo { width: min(280px, 64%); order: -1; }
+}
+
+/* ---------- Pages ---------- */
+.page { padding-top: clamp(40px, 6vw, 80px); }
+.page[hidden] { display: none; }
+.page h1:focus { outline: none; }
+.page-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px 56px; align-items: end; }
+.page-head h1 { font-family: var(--serif); color: var(--plum); font-size: clamp(3rem, 8vw, 6.25rem); line-height: .95; letter-spacing: -.02em; }
+.page-head p { color: var(--ink-soft); max-width: 42ch; justify-self: end; font-size: 1.15rem; }
+.page-body { margin-top: clamp(40px, 6vw, 72px); }
+.sub { margin-top: clamp(72px, 9vw, 120px); }
+.sub > .h2 { margin-bottom: clamp(28px, 4vw, 44px); }
+@media (max-width: 760px) { .page-head { grid-template-columns: 1fr; } .page-head p { justify-self: start; } }
+.pager { margin-top: clamp(72px, 10vw, 128px); padding: 28px 0 clamp(56px, 7vw, 88px); border-top: 1px solid var(--line); display: flex; justify-content: flex-end; }
+.pager a { display: grid; justify-items: end; gap: 2px; text-decoration: none; }
+.pager-label { font-size: .95rem; color: var(--ink-soft); }
+.pager-name { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem); line-height: 1.05; color: var(--plum); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; text-decoration-color: transparent; transition: text-decoration-color .2s ease; }
+.pager a:hover .pager-name { text-decoration-color: var(--plum); }
+@media (prefers-reduced-motion: no-preference) {
+  .page.is-entering { animation: pageIn .45s cubic-bezier(.2, .75, .15, 1) both; }
+}
+@keyframes pageIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+/* ---------- Home: explore tiles ---------- */
+.explore { margin-top: clamp(56px, 8vw, 104px); padding-bottom: clamp(64px, 8vw, 104px); }
+.explore-title { font-family: var(--serif); font-size: clamp(1.6rem, 2.6vw, 2.1rem); color: var(--plum); }
+.tiles { margin-top: 24px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.tiles a {
+  display: flex; flex-direction: column; justify-content: space-between; gap: 28px; height: 100%; min-height: 200px;
+  padding: clamp(22px, 2.6vw, 32px); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  text-decoration: none; transition: background-color .25s ease;
+}
+.tile-name { font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.6rem); line-height: 1; color: var(--plum); transition: color .25s ease; }
+.tile-desc { color: var(--ink-soft); font-size: 1.05rem; line-height: 1.45; max-width: 34ch; transition: color .25s ease; }
+.tiles a:hover, .tiles a:focus-visible { background: var(--plum); }
+.tiles a:hover .tile-name, .tiles a:focus-visible .tile-name { color: var(--on-plum); }
+.tiles a:hover .tile-desc, .tiles a:focus-visible .tile-desc { color: color-mix(in srgb, var(--on-plum) 82%, transparent); }
+@media (max-width: 900px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .tiles { grid-template-columns: 1fr; } .tiles a { min-height: 0; } }
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--band); color: var(--band-ink); }
+.footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 28px 0 32px; }
+.site-footer .motto { font-family: var(--serif); font-style: italic; font-size: 1.25rem; }
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { color: var(--band-ink); text-decoration: underline; text-decoration-color: var(--band-line); text-underline-offset: .25em; }
+.footer-links a:hover { text-decoration-color: var(--band-ink); }
+.site-footer .copy { color: var(--band-soft); font-size: .95rem; }
+
+/* ---------- Announcement & date-aware content ---------- */
+.announce {
+  display: inline-flex; align-items: center; gap: 10px; margin-bottom: clamp(20px, 3vw, 32px);
+  padding: 7px 16px 7px 12px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line);
+  color: var(--ink); text-decoration: none; font-size: .9rem; font-weight: 500; line-height: 1.35;
+}
+.announce:hover { border-color: var(--plum); }
+.pulse { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--rose); }
+@media (prefers-reduced-motion: no-preference) { .pulse { animation: pulse 2.4s ease-out infinite; } }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--rose) 45%, transparent); }
+  70%, 100% { box-shadow: 0 0 0 9px transparent; }
+}
+.after { display: none; }
+.is-past .until { display: none; }
+.is-past .after { display: revert; }
+
+/* ---------- Speaking ---------- */
+.next-talk {
+  display: grid; grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+  gap: 24px clamp(28px, 5vw, 72px); padding: clamp(28px, 4vw, 52px);
+  border-radius: 22px; background: var(--band); color: var(--band-ink);
+}
+.next-flag { font-size: .875rem; font-weight: 600; color: var(--band-soft); }
+.next-day { font-family: var(--serif); font-size: clamp(3rem, 6vw, 4.75rem); line-height: 1; margin-top: 10px; letter-spacing: -.02em; }
+.next-time { margin-top: 12px; font-size: .95rem; color: var(--band-soft); }
+.next-body .talk-role { color: var(--band-soft); }
+.next-body h3 { font-family: var(--serif); font-size: clamp(1.9rem, 3.6vw, 3rem); line-height: 1.05; margin-top: 6px; letter-spacing: -.02em; }
+.next-body .talk-where { color: var(--band-soft); margin-top: 12px; }
+.next-body .talk-desc { margin-top: 18px; max-width: 52ch; font-size: 1.075rem; }
+.talks { margin-top: clamp(32px, 4vw, 48px); }
+.talks li {
+  display: grid; grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+  gap: 8px clamp(28px, 5vw, 72px); padding: clamp(24px, 3vw, 34px) 0; border-top: 1px solid var(--line);
+}
+.talks li:last-child { border-bottom: 1px solid var(--line); }
+.talk-date { font-size: .95rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; padding-top: 3px; }
+.talk-role { font-size: .875rem; font-weight: 600; color: var(--rose); }
+.talks h3 { font-family: var(--serif); font-size: clamp(1.4rem, 2.4vw, 1.9rem); line-height: 1.15; color: var(--plum); margin-top: 4px; max-width: 34ch; letter-spacing: -.01em; }
+.talks .talk-where { margin-top: 10px; font-weight: 500; font-size: .975rem; max-width: 62ch; }
+.talks .talk-desc { margin-top: 6px; color: var(--ink-soft); max-width: 62ch; }
+@media (max-width: 760px) { .next-talk, .talks li { grid-template-columns: 1fr; } }
+
+/* ---------- Full circle note ---------- */
+.full-circle {
+  margin-top: clamp(36px, 5vw, 56px); display: grid; grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+  gap: 8px clamp(28px, 5vw, 72px); align-items: baseline; padding: 28px 0;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.fc-year { font-size: .95rem; color: var(--ink-soft); }
+.fc-text { font-family: var(--serif); font-size: clamp(1.3rem, 2.3vw, 1.75rem); line-height: 1.32; color: var(--plum); max-width: 46ch; }
+@media (max-width: 760px) { .full-circle { grid-template-columns: 1fr; } }
+
+/* ---------- Certifications page ---------- */
+.cert-page { padding: clamp(36px, 6vw, 72px) 0 clamp(72px, 10vw, 128px); }
+.back-link { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: .95rem; color: var(--plum); text-decoration: none; }
+.back-link::before { content: ""; width: 20px; height: 1px; background: currentColor; }
+.back-link:hover { text-decoration: underline; text-underline-offset: .25em; }
+.cert-head { margin-top: clamp(28px, 4vw, 48px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px 56px; align-items: end; }
+.cert-head h1 { font-family: var(--serif); font-weight: 400; color: var(--plum); font-size: clamp(3rem, 8vw, 6.5rem); line-height: .95; letter-spacing: -.03em; }
+.cert-head p { color: var(--ink-soft); max-width: 40ch; justify-self: end; }
+.cert-group { margin-top: clamp(48px, 6vw, 80px); }
+.cert-group h3.cert-group-title { font-family: var(--serif); font-weight: 400; font-size: clamp(1.6rem, 2.8vw, 2.25rem); color: var(--plum); padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.cert-grid { margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr)); gap: 24px; }
+.cert {
+  display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 20px 28px; align-items: start;
+  padding: clamp(24px, 3vw, 36px); border-radius: 22px; background: var(--surface); border: 1px solid var(--line);
+}
+.badge svg { width: 120px; height: 120px; display: block; overflow: visible; }
+.b-outer { fill: var(--plum); }
+.b-inner { fill: none; stroke: var(--on-plum); stroke-opacity: .45; stroke-width: 1; }
+.b-ring { fill: var(--on-plum); font: 600 7.6px var(--sans); letter-spacing: .14em; }
+.b-mark { fill: var(--on-plum); font: 400 21px var(--serif); }
+.b-mark-lg { font-size: 27px; }
+.cert:not(.is-credential):not(.is-progress) .b-outer { fill: var(--bg-alt); stroke: var(--plum); stroke-width: 1.4; }
+.cert:not(.is-credential):not(.is-progress) .b-inner { stroke: var(--plum); stroke-opacity: .35; }
+.cert:not(.is-credential):not(.is-progress) .b-ring, .cert:not(.is-credential):not(.is-progress) .b-mark { fill: var(--plum); }
+.is-progress .b-outer { fill: var(--bg-alt); stroke: var(--plum); stroke-width: 1.4; stroke-dasharray: 3 4; }
+.is-progress .b-inner { stroke: var(--plum); stroke-opacity: .35; }
+.is-progress .b-ring, .is-progress .b-mark { fill: var(--plum); }
+.cert-status { font-size: .875rem; font-weight: 600; color: var(--rose); }
+.reg { font-size: .45em; vertical-align: super; line-height: 0; margin-left: 1px; }
+.cert h4 { font-family: var(--serif); font-size: clamp(1.4rem, 2.2vw, 1.75rem); line-height: 1.15; color: var(--plum); margin-top: 4px; }
+.cert-issuer { margin-top: 6px; font-weight: 600; font-size: .95rem; }
+.cert-desc { margin-top: 10px; color: var(--ink-soft); font-size: .975rem; }
+.cert .text-link { display: inline-block; margin-top: 16px; }
+.cert-all {
+  margin-top: clamp(40px, 6vw, 64px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 20px; padding: clamp(24px, 3vw, 36px); border-radius: 22px; background: var(--bg-alt);
+}
+.cert-all p { font-family: var(--serif); font-size: clamp(1.2rem, 2vw, 1.55rem); line-height: 1.3; color: var(--plum); max-width: 34ch; }
+@media (max-width: 760px) { .cert-head { grid-template-columns: 1fr; } .cert-head p { justify-self: start; } }
+@media (max-width: 520px) { .cert { grid-template-columns: 1fr; } .badge svg { width: 96px; height: 96px; } }
+
+/* ---------- Toolkit ---------- */
+.toolkit { margin-top: clamp(56px, 7vw, 88px); display: grid; grid-template-columns: minmax(180px, 260px) minmax(0, 1fr); gap: 16px clamp(28px, 5vw, 72px); }
+.toolkit-title { font-family: var(--serif); font-size: 1.5rem; color: var(--plum); line-height: 1.2; }
+.toolkit-list > div { display: grid; grid-template-columns: minmax(150px, 200px) minmax(0, 1fr); gap: 4px 24px; padding: 14px 0; border-top: 1px solid var(--line); }
+.toolkit-list > div:last-child { border-bottom: 1px solid var(--line); }
+.toolkit-list dt { font-weight: 600; font-size: .95rem; }
+.toolkit-list dd { margin: 0; color: var(--ink-soft); font-size: .975rem; }
+@media (max-width: 760px) { .toolkit, .toolkit-list > div { grid-template-columns: 1fr; } }
+
+/* ---------- Home ---------- */
+.page-home { padding-top: clamp(28px, 5vw, 64px); }
+.page-home .hero-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: center; gap: clamp(28px, 5vw, 72px); }
+.page-home .hero-text { padding-bottom: 0; }
+.hello { font-family: var(--serif); font-style: italic; font-size: clamp(1.4rem, 2.4vw, 1.9rem); color: var(--rose); margin-bottom: 6px; }
+.page-home .hero-name { font-size: clamp(3.4rem, 8.6vw, 8.5rem); }
+/* Pipes sit before every title; the one that lands at the start of a line is clipped away. */
+.hero-titles { margin-top: 18px; overflow: hidden; font-size: .95rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); max-width: 40rem; }
+.ht-inner { display: flex; flex-wrap: wrap; row-gap: 6px; margin-left: -1.8em; }
+.ht-inner > span::before { content: "|"; display: inline-block; width: 1.8em; text-align: center; color: var(--rose); }
+.page-home .hero-lede { margin-top: 20px; max-width: 34ch; }
+.page-home .hero-portrait { position: relative; width: 100%; max-width: 500px; justify-self: end; padding: 0 18px 18px 0; }
+.page-home .hero-portrait::before {
+  content: ""; position: absolute; inset: 18px 0 0 18px;
+  border: 1.5px solid color-mix(in srgb, var(--plum) 45%, transparent);
+  border-radius: 50% 50% 18px 18px / 40% 40% 18px 18px;
+}
+.page-home .arch { position: relative; }
+
+.motto-band {
+  margin-top: clamp(48px, 7vw, 96px); padding: clamp(64px, 9vw, 120px) 0;
+  background:
+    radial-gradient(circle at 12% 20%, color-mix(in srgb, var(--band-ink) 10%, transparent), transparent 45%),
+    radial-gradient(circle at 88% 85%, color-mix(in srgb, var(--rose) 30%, transparent), transparent 50%),
+    var(--band);
+  color: var(--band-ink); text-align: center; overflow: hidden;
+}
+.motto-big { font-family: var(--serif); font-style: italic; font-size: clamp(3.2rem, 10.5vw, 9.5rem); line-height: .95; letter-spacing: -.02em; }
+.motto-sub { margin: 28px auto 0; max-width: 40ch; font-size: clamp(1.1rem, 1.8vw, 1.35rem); color: var(--band-soft); }
+.motto-sub::before, .motto-sub::after { content: ""; display: inline-block; width: 36px; height: 1px; background: var(--band-soft); vertical-align: middle; margin: 0 14px; opacity: .6; }
+
+.home-block { margin-top: clamp(64px, 8vw, 104px); }
+.home-last { padding-bottom: clamp(72px, 9vw, 112px); }
+.home-title { font-family: var(--serif); font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.05; color: var(--plum); }
+.home-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 24px; }
+.home-head .text-link { font-size: 1rem; }
+
+.glance-row { margin-top: 26px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid var(--plum); }
+.glance-row a { display: flex; flex-direction: column; gap: 10px; height: 100%; padding: 24px 22px 26px; text-decoration: none; border-right: 1px solid var(--line); transition: background-color .2s ease; }
+.glance-row li:last-child a { border-right: 0; }
+.glance-row a:hover { background: var(--bg-alt); }
+.gl-big { font-family: var(--serif); font-size: clamp(2.6rem, 4.4vw, 3.6rem); line-height: 1; color: var(--plum); letter-spacing: -.02em; }
+.gl-text { color: var(--ink-soft); line-height: 1.45; }
+.gl-go { margin-top: auto; font-weight: 700; color: var(--plum); text-decoration: underline; text-underline-offset: .25em; text-decoration-thickness: 1px; text-decoration-color: color-mix(in srgb, var(--plum) 35%, transparent); }
+.glance-row a:hover .gl-go { text-decoration-color: currentColor; }
+
+.logo-card {
+  display: grid; place-items: center; height: 120px; padding: 14px 18px; border-radius: 16px;
+  background: #fff; border: 1px solid var(--line);
+}
+.logo-card img { max-height: 76px; max-width: 100%; width: auto; height: auto; object-fit: contain; }
+.logo-card-tall img { max-height: 104px; }
+.logo-text { font-family: "Times New Roman", Tinos, Times, serif; font-size: 1.35rem; color: #4A1A34; text-align: center; line-height: 1.15; }
+.career-row { margin-top: 26px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; position: relative; }
+.career-row::before { content: ""; position: absolute; left: 0; right: 0; top: 60px; height: 1px; background: var(--line); z-index: 0; }
+.career-row li, .comm-row li { position: relative; display: flex; flex-direction: column; gap: 3px; }
+.career-row .logo-card { position: relative; z-index: 1; }
+.career-row b, .comm-row b { margin-top: 12px; font-family: var(--serif); font-weight: 400; font-size: 1.3rem; line-height: 1.2; color: var(--plum); }
+.career-row span, .comm-row span:not(.logo-text) { color: var(--ink-soft); line-height: 1.4; }
+.career-row .yr { font-size: .95rem; }
+.career-row .is-now .logo-card { border: 2px solid var(--plum); }
+.career-row .is-now b::after { content: "Current"; display: inline-block; margin-left: 8px; padding: 2px 9px; border-radius: 999px; font: 700 .75rem/1.4 var(--sans); vertical-align: 4px; background: var(--plum); color: var(--on-plum); }
+.comm-row { margin-top: 26px; display: grid; }
+.comm-row .logo-card img { max-height: 64px; }
+
+/* Experience page logo chips */
+.logo-chip { position: relative; display: grid; place-items: center; height: 56px; width: 100%; max-width: 168px; padding: 8px 14px; border-radius: 12px; background: #fff; border: 1px solid var(--line); }
+.logo-chip img { max-height: 40px; width: auto; max-width: 100%; object-fit: contain; }
+.org-logo { margin-bottom: 14px; height: 72px; max-width: 200px; }
+.org-logo img { max-height: 52px; }
+.compact-roles .r-head { display: flex; align-items: center; gap: 14px; }
+.compact-roles .logo-chip { height: 56px; width: 96px; flex: none; padding: 4px 8px; }
+.compact-roles .logo-chip img { max-height: 46px; }
+
+@media (max-width: 1000px) {
+  .glance-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .glance-row li:nth-child(2) a { border-right: 0; }
+  .glance-row li:nth-child(n+3) a { border-top: 1px solid var(--line); }
+  .career-row { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 28px; }
+  .career-row::before { display: none; }
+}
+@media (max-width: 720px) {
+  .page-home .hero-grid { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .page-home .hero-portrait { order: -1; justify-self: center; width: min(360px, 82%); }
+  .ht-inner, .hero-ctas { justify-content: center; }
+  .hero-titles { margin-inline: auto; }
+  .page-home .hero-lede { margin-inline: auto; }
+  .career-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 480px) {
+  .glance-row { grid-template-columns: 1fr; }
+  .glance-row a { border-right: 0; border-top: 1px solid var(--line); padding-inline: 4px; }
+  .glance-row li:first-child a { border-top: 0; }
+  .logo-card { height: 100px; }
+  .hero-titles { font-size: .85rem; }
+}
+
+/* ---------- Logos & photos on inner pages ---------- */
+.photo-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; margin-top: 28px; }
+.photo-pair figure { margin: 0; }
+.photo-pair img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
+.photo-pair figcaption { margin-top: 8px; font-size: .925rem; color: var(--ink-soft); }
+.comm-logos { margin-top: 24px; display: grid; gap: 14px; }
+.wit-banner { margin: 0; border-radius: var(--radius); overflow: hidden; }
+.anitab-card { margin: 0; height: 110px; }
+.anitab-card img { max-height: 64px; }
+.wit-banner img { width: 100%; height: auto; }
+@media (max-width: 600px) { .photo-pair { grid-template-columns: 1fr; } }
+
+/* ---------- Photo sets ---------- */
+.photo-trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 28px; }
+.photo-trio figure { margin: 0; }
+.photo-trio img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); }
+.photo-trio figure:first-child img { object-position: 50% 50%; }
+.photo-trio figcaption { margin-top: 8px; font-size: .925rem; color: var(--ink-soft); line-height: 1.35; }
+@media (max-width: 700px) { .photo-trio { grid-template-columns: 1fr 1fr; } .photo-trio figure:first-child { grid-column: span 2; } .photo-trio figure:first-child img { aspect-ratio: 4 / 3; } }
+
+.talks li { grid-template-columns: minmax(150px, 200px) minmax(0, 1fr) minmax(0, 380px); }
+.talk-media { display: grid; gap: 8px; }
+.talk-media figure { margin: 0; overflow: hidden; border-radius: 12px; background: var(--bg-alt); }
+.talk-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.talk-media.mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; height: 320px; }
+.talk-media.mosaic .m-tall { grid-row: span 2; }
+.talk-media.mosaic .m-tall img { object-position: 50% 30%; }
+.talk-media.mosaic .m-badge { background: #3D5BC9; }
+.talk-media.mosaic .m-badge img { object-fit: contain; }
+.talk-media.pair { grid-template-columns: 1.15fr .85fr; height: 280px; }
+.talk-media.pair img { object-position: 50% 35%; }
+@media (max-width: 1000px) {
+  .talks li { grid-template-columns: minmax(150px, 200px) minmax(0, 1fr); }
+  .talk-media { grid-column: 2; margin-top: 14px; max-width: 520px; }
+}
+@media (max-width: 760px) { .talk-media { grid-column: auto; } .talk-media.mosaic { height: 280px; } .talk-media.pair { height: 230px; } }
+
+.moments { margin-top: clamp(64px, 8vw, 104px); }
+.moments-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px 56px; align-items: end; }
+.moments-head p { color: var(--ink-soft); max-width: 42ch; justify-self: end; }
+.gallery { margin-top: 28px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); transition: transform .3s ease; }
+.gallery figure:hover img { transform: scale(1.015); }
+.gallery figcaption { margin-top: 8px; font-size: .95rem; color: var(--ink-soft); line-height: 1.35; }
+@media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } .moments-head { grid-template-columns: 1fr; } .moments-head p { justify-self: start; } }
+
+/* Home hero: studio headshot sits on white */
+.page-home .arch { background: #fff; }
+.page-home .arch img { object-position: 50% 18%; }
+.about-photo img { object-position: 50% 25%; }
+.contact-photo .arch img { object-position: 50% 20%; }
+
+/* Mid widths: keep all page buttons on one row where possible */
+@media (max-width: 1000px) and (min-width: 641px) {
+  .ribbon-list { gap: 4px; }
+  .ribbon-list a { padding: 7px 12px; font-size: .95rem; }
+}
+@media (max-width: 900px) and (min-width: 721px) { .page-home .hero-portrait { order: 0; } }
+/* Phones: centered titles become small tags (no separators) */
+@media (max-width: 720px) {
+  .hero-titles { overflow: visible; }
+  .ht-inner { margin-left: 0; gap: 6px; }
+  .ht-inner > span::before { display: none; }
+  .ht-inner > span { padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); font-size: .78rem; }
+}
+.career-row .logo-text, .comm-row .logo-text { color: #4A1A34; }
+
+/* Experience: logos stand in for company names */
+.org-logo { height: 96px; max-width: 240px; margin-bottom: 14px; padding: 10px 16px; }
+.org-logo img { max-height: 70px; }
+.compact-roles .logo-chip { width: 112px; height: 64px; }
+.compact-roles .chip-fill { padding: 0; overflow: hidden; border-color: transparent; }
+.compact-roles .chip-fill picture, .compact-roles .chip-fill img { width: 100%; height: 100%; max-height: none; object-fit: cover; display: block; }
+.compact-roles .logo-text { font-size: 1.05rem; }
+.role .photo-pair { margin-top: 18px; max-width: 640px; }
+.photo-single { margin: 18px 0 0; max-width: 420px; }
+.photo-single img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
+.photo-single figcaption { margin-top: 8px; font-size: .925rem; color: var(--ink-soft); }
+
+/* ---------- Projects: category tabs ---------- */
+.proj-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: clamp(28px, 4vw, 44px); }
+.proj-tab {
+  display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: 14px; align-items: center; text-align: left;
+  padding: 18px 20px; border-radius: 18px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink);
+  font: inherit; cursor: pointer; transition: border-color .2s ease, background-color .2s ease, color .2s ease;
+}
+.proj-tab:hover { border-color: var(--plum); }
+.pt-icon { grid-row: span 2; width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: var(--bg-alt); color: var(--plum); }
+.pt-icon svg { width: 26px; height: 26px; }
+.pt-name { font-family: var(--serif); font-size: clamp(1.25rem, 2vw, 1.55rem); line-height: 1.15; color: var(--plum); }
+.pt-meta { font-size: .925rem; color: var(--ink-soft); }
+.proj-tab[aria-selected="true"] { background: var(--plum); border-color: var(--plum); }
+.proj-tab[aria-selected="true"] .pt-name { color: var(--on-plum); }
+.proj-tab[aria-selected="true"] .pt-meta { color: color-mix(in srgb, var(--on-plum) 80%, transparent); }
+.proj-tab[aria-selected="true"] .pt-icon { background: color-mix(in srgb, var(--on-plum) 16%, transparent); color: var(--on-plum); }
+.proj-panel:focus-visible { outline-offset: 8px; }
+@media (prefers-reduced-motion: no-preference) { .proj-panel:not([hidden]) { animation: pageIn .35s cubic-bezier(.2, .75, .15, 1) both; } }
+@media (max-width: 760px) { .proj-tabs { grid-template-columns: 1fr; gap: 10px; } .proj-tab { padding: 14px 16px; } }
+
+/* Project headings sit in a plum box */
+.case h3 {
+  display: inline-block; margin-top: 12px; padding: .32em .6em .38em; border-radius: 12px;
+  background: var(--plum); color: var(--on-plum); line-height: 1.15;
+}
+.mini-cards { display: grid; gap: 12px; }
+.mini { padding: 18px 20px; border-radius: 14px; background: var(--bg-alt); border-left: 4px solid var(--plum); }
+.mini b { display: block; font-family: var(--serif); font-weight: 400; font-size: 1.3rem; color: var(--plum); }
+.mini span { display: block; margin-top: 4px; color: var(--ink-soft); line-height: 1.45; }
+
+/* ---------- Home refinements ---------- */
+.announce { background: var(--plum); color: var(--on-plum); border-color: var(--plum); padding: 6px 16px 6px 10px; }
+.announce:hover { background: var(--plum-strong); border-color: var(--plum-strong); }
+.announce .pulse { background: var(--on-plum); }
+.ann-tag { font-size: .75rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: color-mix(in srgb, var(--on-plum) 18%, transparent); }
+.home-intro { margin-top: 10px; font-family: var(--serif); font-style: italic; font-size: clamp(1.2rem, 2vw, 1.5rem); color: var(--ink-soft); max-width: 46ch; }
+.who-icon { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; background: var(--bg-alt); color: var(--plum); }
+.who-icon svg { width: 26px; height: 26px; }
+.who-name { font-family: var(--serif); font-size: clamp(1.5rem, 2.3vw, 1.9rem); line-height: 1.1; color: var(--plum); }
+.who-row a:hover .who-icon { background: var(--plum); color: var(--on-plum); }
+.logo-card.card-fill { padding: 0; overflow: hidden; }
+.logo-card.card-fill picture, .logo-card.card-fill img { width: 100%; height: 100%; max-height: none; object-fit: cover; display: block; }
+.career-row b { font-family: var(--serif); font-weight: 400; font-size: 1.2rem; line-height: 1.25; color: var(--plum); margin-top: 12px; }
+.comm-row { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; position: relative; }
+.comm-row::before { content: ""; position: absolute; left: 0; right: 0; top: 60px; height: 1px; background: var(--line); }
+.comm-row .logo-card { position: relative; z-index: 1; }
+.comm-row .yr, .career-row .yr { margin-top: 10px; font-size: .9rem; font-weight: 700; color: var(--rose); }
+.career-row .yr { margin-top: 2px; font-weight: 400; color: var(--ink-soft); }
+.comm-row li > span:last-child { color: var(--ink-soft); line-height: 1.45; font-size: .975rem; }
+.comm-row .logo-card img { max-height: 70px; }
+@media (max-width: 1000px) { .comm-row { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 28px; } .comm-row::before { display: none; } }
+@media (max-width: 720px) { .comm-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .comm-row { grid-template-columns: 1fr; } }
+
+.fill-te { background: rgb(234, 130, 2) !important; border-color: transparent !important; }
+.fill-wit { background: linear-gradient(90deg, rgb(90, 84, 164), rgb(191, 80, 157)) !important; border-color: transparent !important; }
+.logo-card.fill-te img, .logo-card.fill-wit img, .compact-roles .fill-te img { object-fit: contain !important; }
+.logo-card.card-fill, .compact-roles .chip-fill { display: block; }
+.logo-card.card-fill > picture, .compact-roles .chip-fill > picture { display: block; height: 100%; }
+.comm-row .logo-card.fill-wit img, .career-row .logo-card.fill-te img { max-height: none; height: 100%; width: 100%; }
+
+/* Certifications: in-progress panel on top, earned below */
+.cert-section-title { font-family: var(--serif); font-size: clamp(2rem, 3.6vw, 2.9rem); line-height: 1.05; color: var(--plum); }
+.cert-progress {
+  margin-top: 0; padding: clamp(22px, 3vw, 34px); border-radius: 22px;
+  background: var(--bg-alt); border: 1.5px dashed color-mix(in srgb, var(--plum) 55%, transparent);
+}
+.cert-progress .cert-grid { margin-top: 18px; grid-template-columns: 1fr; }
+.cert-progress .cert { max-width: 760px; }
+.cert-earned { margin-top: clamp(56px, 7vw, 88px); }
+.cert-earned .cert-group:first-of-type { margin-top: clamp(24px, 3vw, 36px); }
+.cert-group h3.cert-group-title { font-size: clamp(1.35rem, 2.2vw, 1.75rem); }
+
+/* Projects page: articles get their own full-width band */
+.articles-band {
+  margin-top: clamp(72px, 9vw, 120px); padding: clamp(56px, 8vw, 96px) 0;
+  background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.articles-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px 56px; align-items: end; margin-bottom: clamp(24px, 3vw, 36px); }
+.articles-head p { color: var(--ink-soft); max-width: 42ch; justify-self: end; }
+.articles-band .articles { border-top: 0; display: grid; gap: 12px; }
+.articles-band .articles a {
+  padding: clamp(18px, 2.4vw, 26px) clamp(20px, 2.6vw, 30px); border: 1px solid var(--line); border-radius: 16px;
+  background: var(--surface); transition: border-color .2s ease;
+}
+.articles-band .articles a:hover { border-color: var(--plum); }
+.articles-band + .pager { margin-top: 0; border-top: 0; }
+@media (max-width: 760px) { .articles-head { grid-template-columns: 1fr; } .articles-head p { justify-self: start; } }
+
+.cert-date { margin-top: 2px; font-size: .925rem; color: var(--ink-soft); }
+.cert-tags { margin-top: 12px; }
+.cert-tags li { font-size: .8rem; padding: 4px 11px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap ribbon-top">
+    <a class="mark" href="#/" aria-label="Sheetal Patangay, home">Sheetal Patangay</a>
+    <p class="ribbon-motto">Aspire to inspire</p>
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>
+      </button>
+  </div>
+  <nav class="ribbon-nav" id="siteNav" aria-label="Pages">
+    <ul class="ribbon-list">
+        <li class="peek-start"><a href="#/" data-nav="home"><span class="nav-label">Home</span><span class="nav-peek">A quick overview of who I am and what I'm working on now.</span></a></li>
+        <li class="peek-start"><a href="#/about" data-nav="about"><span class="nav-label">About</span><span class="nav-peek">How I think, my toolkit, and life beyond work.</span></a></li>
+        <li><a href="#/experience" data-nav="experience"><span class="nav-label">Experience</span><span class="nav-peek">Rensel Consulting, TE Connectivity, Amazon and my education.</span></a></li>
+        <li><a href="#/projects" data-nav="projects"><span class="nav-label">Projects</span><span class="nav-peek">Academic, internship and independent projects, plus my articles.</span></a></li>
+        <li><a href="#/speaking" data-nav="speaking"><span class="nav-label">Speaking</span><span class="nav-peek">Grace Hopper 2026, ITE in Detroit, Central PA Innovate and more.</span></a></li>
+        <li><a href="#/recognition" data-nav="recognition"><span class="nav-label">Recognition</span><span class="nav-peek">Awards, Women in Tech leadership and mentoring.</span></a></li>
+        <li class="peek-end"><a href="#/certifications" data-nav="certifications"><span class="nav-label">Certifications</span><span class="nav-peek">CAPM, Google Project Management and certificates in leadership, data and AI.</span></a></li>
+        <li class="peek-end"><a href="#/contact" data-nav="contact"><span class="nav-label">Contact</span><span class="nav-peek">Email, LinkedIn and GitHub. I'd love to hear from you.</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content">
+
+<!-- PAGE: Home -->
+<section class="page page-home" data-page="home" data-title="">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <a class="announce until" href="#/speaking"><span class="pulse" aria-hidden="true"></span><span class="ann-tag">Upcoming</span>Speaking at Grace Hopper Celebration 2026, Oct 29 in Anaheim</a>
+      <p class="hello">Hello! I'm</p>
+      <h1 class="hero-name" tabindex="-1"><span class="line"><span>Sheetal</span></span><span class="line"><span>Patangay</span></span></h1>
+      <p class="hero-titles"><span class="ht-inner"><span>Data Scientist</span><span>Project &amp; Product Management</span><span>Strategy</span><span>Women in Tech Leader</span><span>Public Speaker</span></span></p>
+      <p class="hero-lede">I lead projects, shape products, and build with data, so teams can see clearly and decide faster.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#/projects">Explore my projects</a>
+        <a class="btn btn-ghost" href="#/contact">Contact me</a>
+      </div>
+    </div>
+    <figure class="hero-portrait">
+      <div class="arch"><img src="assets/hero.jpg" width="900" height="1125" alt="Professional headshot of Sheetal Patangay in a black blazer and magenta blouse"></div>
+    </figure>
+  </div>
+
+  <section class="motto-band" aria-label="My motto">
+    <div class="wrap motto-inner">
+      <p class="motto-big">Aspire to inspire.</p>
+      <p class="motto-sub">It isn't just my tagline. It's the way I live, lead and learn.</p>
+    </div>
+  </section>
+
+  <div class="wrap home-block">
+    <h2 class="home-title">At a glance</h2>
+    <p class="home-intro">A people-first, data-driven problem solver who turns ambiguity into clarity.</p>
+    <ul class="glance-row who-row">
+      <li><a href="#/projects"><span class="who-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></span><span class="who-name">Data scientist</span><span class="gl-text">I build models, dashboards and automation that help teams see clearly and decide faster.</span><span class="gl-go">See my projects</span></a></li>
+      <li><a href="#/experience"><span class="who-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M9 3h6v3H9z"/><path d="M8 11l2 2 4-4"/><path d="M8 17h8"/></svg></span><span class="who-name">Project &amp; product leader</span><span class="gl-text">CAPM certified. I support project managers and executives from planning through delivery, and manage client projects at Rensel.</span><span class="gl-go">View experience</span></a></li>
+      <li><a href="#/speaking"><span class="who-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg></span><span class="who-name">Speaker &amp; mentor</span><span class="gl-text">Three stages in 2026, including Grace Hopper, and mentoring the next generation of women in tech.</span><span class="gl-go">View my talks</span></a></li>
+      <li><a href="#/about"><span class="who-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l3-1 11-11-2-2L4 18l-1 3z"/><path d="M14 6l2 2"/><path d="M17 3l4 4"/></svg></span><span class="who-name">Creative at heart</span><span class="gl-text">I sketch for perspective, dance for energy and photograph nature to slow down and really see.</span><span class="gl-go">More about me</span></a></li>
+    </ul>
+  </div>
+
+  <div class="wrap home-block">
+    <div class="home-head"><h2 class="home-title">Where I've worked</h2><a class="text-link" href="#/experience">View full experience</a></div>
+    <ol class="career-row">
+      <li><div class="logo-card"><picture><source srcset="assets/st-amazon.png" media="(prefers-reduced-motion: reduce)"><img src="assets/gif-amazon.gif" width="520" height="199" alt="Amazon"></picture></div><b>Digital Product Associate</b><span class="yr">2020 to 2022</span></li>
+      <li><div class="logo-card"><picture><source srcset="assets/st-psu.png" media="(prefers-reduced-motion: reduce)"><img src="assets/gif-psu.gif" width="182" height="200" alt="Penn State"></picture></div><b>MS, Information Systems</b><span class="yr">2023 to 2024</span></li>
+      <li><div class="logo-card"><img src="assets/lg-extern.png" width="211" height="71" alt="Extern"></div><b>Market Research &amp; Data Extern</b><span class="yr">2024</span></li>
+      <li><div class="logo-card card-fill fill-te"><picture><source srcset="assets/st-te.jpg" media="(prefers-reduced-motion: reduce)"><img src="assets/gif-te.gif" width="300" height="290" alt="TE Connectivity summer internship"></picture></div><b>Product Management Intern</b><span class="yr">2024</span></li>
+      <li class="is-now"><div class="logo-card"><picture><source srcset="assets/st-rensel.png" media="(prefers-reduced-motion: reduce)"><img src="assets/gif-rensel.gif" width="640" height="256" alt="Rensel Consulting"></picture></div><b>Data Scientist &amp; Strategy Specialist</b><span class="yr">2024 to now</span></li>
+    </ol>
+  </div>
+
+  <div class="wrap home-block home-last">
+    <div class="home-head"><h2 class="home-title">My community journey</h2><a class="text-link" href="#/recognition">View leadership &amp; community</a></div>
+    <ol class="comm-row">
+      <li><div class="logo-card"><picture><source srcset="assets/st-psu.png" media="(prefers-reduced-motion: reduce)"><img src="assets/gif-psu.gif" width="182" height="200" alt="Penn State"></picture></div><span class="yr">2023 to 2024</span><span>Penn State Harrisburg: Women in Technology Club board member, Global Ambassador Coordinator and 2024 valedictorian student speaker.</span></li>
+      <li><div class="logo-card"><img src="assets/lg-anitab.png" width="390" height="152" alt="AnitaB.org"></div><span class="yr">2023 to now</span><span>Grace Hopper Celebration scholar and volunteer in 2023 and 2025, returning as a speaker in 2026.</span></li>
+      <li><div class="logo-card"><img src="assets/lg-tccp.png" width="700" height="111" alt="Technology Council of Central Pennsylvania"></div><span class="yr">2025 to now</span><span>Next Gen Award finalist in 2025 and a Central PA Innovate speaker in 2026.</span></li>
+      <li><div class="logo-card card-fill fill-wit"><img src="assets/wit.jpg" width="1024" height="467" alt="Women in Tech, Technology Council of Central Pennsylvania"></div><span class="yr">2025 to now</span><span>Mentor to two Penn State students and 2026 Nominations Committee Lead for the 10th annual Women in Tech Awards.</span></li>
+      <li><div class="logo-card"><img src="assets/lg-ite.jpg" width="520" height="240" alt="ITE, a community of transportation professionals"></div><span class="yr">2026</span><span>Speaker at the Joint ITE International and Great Lakes District Annual Meeting in Detroit.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PAGE: About -->
+<section class="page " data-page="about" data-title="About" hidden>
+  <header class="wrap page-head">
+    <h1 tabindex="-1">About</h1>
+    <p>How I think, what I bring to a team, and who I am beyond work.</p>
+  </header>
+  <div class="page-body">
+  <div class="wrap about-grid">
+    <figure class="about-photo">
+      <img src="assets/about.jpg" width="760" height="1064" alt="Sheetal smiling on a staircase covered in autumn leaves" loading="lazy">
+    </figure>
+    <div class="about-text">
+      <h2 class="h2">Data with direction</h2>
+      <p class="intro">I'm a people-first, data-driven problem solver. I turn ambiguity into clarity and help teams move ideas forward with structure, insight and intention.</p>
+      <p>I work where data, design and decision-making meet: insights become strategies, and strategies become stories that move people to act. Whether I'm managing a project, shaping a product or automating a workflow with AI, it starts from the same foundation. Know what the data says, know where it should take you, and bring people along.</p>
+      <p>My path runs from a computer science degree in India, to Amazon's global product teams, to a master's at Penn State, to a consulting firm where I've grown from product analyst to data scientist, strategy specialist and client project manager.</p>
+      <p>In 2026 I also stepped onto the stage, speaking about AI, data and real-world impact at Central PA Innovate, at an international transportation conference in Detroit, and next at Grace Hopper.</p>
+    </div>
+  </div>
+  <div class="wrap disciplines">
+    <div class="discipline">
+      <h3>Project &amp; program delivery</h3>
+      <p>I support project managers, program managers and executives through planning, coordination, execution and delivery, aligning priorities and managing dependencies. CAPM certified across Agile and predictive environments, and working toward my PMP.</p>
+    </div>
+    <div class="discipline">
+      <h3>Product thinking</h3>
+      <p>From customer obsession at Amazon to product work at TE Connectivity, I translate user needs, business goals and technical constraints into prioritized decisions teams can act on.</p>
+    </div>
+    <div class="discipline">
+      <h3>Data science &amp; automation</h3>
+      <p>Market analysis, dashboards, predictive models and automation that inform strategy and prioritization, and replace guesswork with something teams can trust.</p>
+    </div>
+  </div>
+  <div class="wrap toolkit">
+    <h3 class="toolkit-title">Toolkit</h3>
+    <dl class="toolkit-list">
+      <div><dt>Data &amp; analytics</dt><dd>Python, SQL, Tableau, Power BI, SPSS, Advanced Excel, Google Analytics</dd></div>
+      <div><dt>Delivery &amp; planning</dt><dd>Jira, Confluence, Asana, Smartsheet, Microsoft Project, Trello</dd></div>
+      <div><dt>Product &amp; workflow</dt><dd>Figma, SET-IT, Git and GitHub</dd></div>
+      <div><dt>Methods</dt><dd>Agile and predictive delivery, Concept of Operations, RFPs, roadmap planning, stakeholder management</dd></div>
+    </dl>
+  </div>
+  <div class="wrap sub beyond-grid">
+      <div class="beyond-text">
+      <h2 class="h2">Beyond work</h2>
+      <ul class="interests">
+        <li><b>Pencil art</b><span>I sketch when I need perspective. It calms my mind and sharpens my eye for detail.</span></li>
+        <li><b>Dance</b><span>I dance when I need energy. It's where joy lives.</span></li>
+        <li><b>Photography</b><span>I photograph nature when I want to slow down and really see things.</span></li>
+        <li><b>Conferences</b><span>Every conversation is a chance to learn. For me, networking is about genuine relationships, not numbers.</span></li>
+      </ul>
+    </div>
+    <figure class="beyond-photo">
+      <img src="assets/beyond.jpg" width="760" height="1013" alt="Sheetal in the keynote hall at Grace Hopper Celebration 2025, wearing her attendee badge" loading="lazy">
+    </figure>
+  </div>
+  </div>
+  <nav class="wrap pager" aria-label="Next page">
+    <a href="#/experience"><span class="pager-label">Next</span><span class="pager-name">Experience</span></a>
+  </nav>
+</section>
+
+<!-- PAGE: Experience -->
+<section class="page " data-page="experience" data-title="Experience" hidden>
+  <header class="wrap page-head">
+    <h1 tabindex="-1">Experience</h1>
+    <p>From Amazon's customer-obsessed teams to a consulting firm where I support project managers, program leads and executives.</p>
+  </header>
+  <div class="page-body">
+  <div class="wrap">
+    <ol class="timeline">
+      <li>
+        <div class="org-meta">
+          <span class="logo-chip org-logo"><picture><source srcset="assets/st-rensel.png" media="(prefers-reduced-motion: reduce)"><img src="assets/gif-rensel.gif" width="640" height="256" alt="Rensel Consulting logo"></picture></span>
+          <h3 class="sr-only">Rensel Consulting</h3>
+          <p class="years">2024 to present</p>
+          <p class="org-note">Business consulting firm</p>
+        </div>
+        <div class="role-path">
+          <div class="role">
+            <h4>Data Scientist &amp; Strategy Specialist</h4>
+            <p class="when">Mar 2025 to present</p>
+            <ul>
+              <li>Support project managers, program managers and executive leadership through project planning, coordination, execution and delivery.</li>
+              <li>Serve as project manager for a set of client engagements, and as the data lead for others.</li>
+              <li>Analyze markets and develop insights that support digital transformation and product-driven initiatives.</li>
+              <li>Build automation systems and dashboards that help leadership make faster, better-informed decisions.</li>
+              <li>Represent the firm in the regional tech community, including TCCP's Power in Tech, Power in Us conference.</li>
+            </ul>
+            <div class="photo-pair">
+              <figure><img src="assets/teamselfie.jpg" width="760" height="1013" alt="Selfie of Sheetal with four Rensel Consulting colleagues in their office" loading="lazy"><figcaption>The Rensel Consulting team.</figcaption></figure>
+              <figure><img src="assets/tccpevent.jpg" width="760" height="1014" alt="Sheetal standing in front of a Technology Council of Central Pennsylvania backdrop" loading="lazy"><figcaption>Representing Rensel at a Technology Council of Central PA event.</figcaption></figure>
+            </div>
+          </div>
+          <div class="role">
+            <h4>Product Analyst</h4>
+            <p class="when">Nov 2024 to Mar 2025</p>
+            <ul>
+              <li>Led the end-to-end redesign of the company website, translating user needs, business goals and technical constraints into a modern, scalable digital experience.</li>
+            </ul>
+            <figure class="photo-single"><img src="assets/team.jpg" width="1024" height="768" alt="Sheetal working with two Rensel colleagues at a shared table, with a whiteboard of strategy notes behind them" loading="lazy"><figcaption>A working session with the Rensel team.</figcaption></figure>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="org-meta">
+          <p class="years">2023 to 2024</p>
+          <h3>Internships &amp; externship</h3>
+          <p class="org-note">Alongside my master's at Penn State</p>
+        </div>
+        <ul class="compact-roles">
+          <li>
+            <div class="r-head"><span class="logo-chip chip-fill fill-te"><picture><source srcset="assets/st-te.jpg" media="(prefers-reduced-motion: reduce)"><img src="assets/gif-te.gif" width="300" height="290" alt="TE Connectivity summer internship badge"></picture></span><div><p class="r-title">Product Management Intern</p><p class="r-org">Pennsylvania</p></div></div>
+            <p class="r-when">Jun to Aug 2024</p>
+            <p class="r-note">Data-driven product work with the product management team.</p>
+          </li>
+          <li>
+            <div class="r-head"><span class="logo-chip"><img src="assets/lg-extern.png" width="211" height="71" alt="Extern logo" loading="lazy"></span><div><p class="r-title">Market Research &amp; Data Analyst Extern</p><p class="r-org">Remote</p></div></div>
+            <p class="r-when">Mar to Apr 2024</p>
+          </li>
+          <li>
+            <div class="r-head"><span class="logo-chip"><picture><source srcset="assets/st-psu.png" media="(prefers-reduced-motion: reduce)"><img src="assets/gif-psu.gif" width="182" height="200" alt="Penn State"></picture></span><div><p class="r-title">Global Ambassador Coordinator</p><p class="r-org">Penn State Harrisburg</p></div></div>
+            <p class="r-when">Jan 2023 to Jun 2024</p>
+            <p class="r-note">Program leadership for the campus global ambassador program.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div class="org-meta">
+          <span class="logo-chip org-logo"><picture><source srcset="assets/st-amazon.png" media="(prefers-reduced-motion: reduce)"><img src="assets/gif-amazon.gif" width="520" height="199" alt="Amazon logo"></picture></span>
+          <h3 class="sr-only">Amazon</h3>
+          <p class="years">2020 to 2022</p>
+          <p class="org-note">Customer-obsessed product work, based in India</p>
+        </div>
+        <div class="role">
+          <h4>Digital Product Associate</h4>
+          <p class="when">Oct 2020 to May 2022</p>
+          <ul>
+            <li>Analyzed customer behavior with global teams to uncover product insights and drive improvements to key metrics.</li>
+            <li>Turned customer feedback into prioritized action, collaborating across teams to ship improvements.</li>
+            <li>Built my foundation in agile ways of working and digital product strategy.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div class="wrap sub">
+    <h2 class="h2">Education</h2>
+    <div class="edu-grid">
+      <div>
+        <ul class="degrees">
+          <li>
+            <p class="when">Jan 2023 to Aug 2024</p>
+            <h3>Master of Science, Information Systems</h3>
+            <p class="school">The Pennsylvania State University, USA</p>
+            <p>Bridging business strategy and technology through data analytics, project management and digital innovation.</p>
+          </li>
+          <li>
+            <p class="when">Sept 2016 to June 2020</p>
+            <h3>Bachelor of Technology, Computer Science &amp; Engineering</h3>
+            <p class="school">Jawaharlal Nehru Technological University, India</p>
+            <p>A strong foundation in programming, problem-solving and system design.</p>
+          </li>
+        </ul>
+      </div>
+      <figure class="edu-photo">
+        <div class="arch"><img src="assets/grad.jpg" width="720" height="960" alt="Sheetal in her 2024 graduation cap and gown, looking over her shoulder" loading="lazy"></div>
+      </figure>
+    </div>
+  </div>
+  </div>
+  <nav class="wrap pager" aria-label="Next page">
+    <a href="#/projects"><span class="pager-label">Next</span><span class="pager-name">Projects</span></a>
+  </nav>
+</section>
+
+<!-- PAGE: Projects -->
+<section class="page" data-page="projects" data-title="Projects" hidden>
+  <header class="wrap page-head">
+    <h1 tabindex="-1">Projects</h1>
+    <p>Academic, internship and independent work in product, data science and analytics. Choose a category to explore.</p>
+  </header>
+  <div class="page-body">
+  <div class="wrap">
+    <div class="proj-tabs" role="tablist" aria-label="Project categories">
+      <button type="button" class="proj-tab" role="tab" id="tab-academic" aria-controls="panel-academic" aria-selected="true" tabindex="0" data-tab="academic">
+        <span class="pt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11v5c2 2 10 2 12 0v-5"/><path d="M22 9v6"/></svg></span><span class="pt-name">Academic projects</span><span class="pt-meta">3 projects from Penn State and JNTU</span>
+      </button>
+      <button type="button" class="proj-tab" role="tab" id="tab-internship" aria-controls="panel-internship" aria-selected="false" tabindex="-1" data-tab="internship">
+        <span class="pt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></span><span class="pt-name">Internship projects</span><span class="pt-meta">1 project from Afame Technologies</span>
+      </button>
+      <button type="button" class="proj-tab" role="tab" id="tab-independent" aria-controls="panel-independent" aria-selected="false" tabindex="-1" data-tab="independent">
+        <span class="pt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3"/><path d="M5 20c1-4 4-6 7-6"/><path d="M14 19l3-4 2 2 3-5"/><path d="M19 12h3v3"/></svg></span><span class="pt-name">Independent projects</span><span class="pt-meta">1 self-driven project</span>
+      </button>
+    </div>
+    <div class="proj-panel" role="tabpanel" id="panel-academic" aria-labelledby="tab-academic" tabindex="0">
+    <article class="case">
+      <div class="case-text">
+        <p class="case-kicker">Product management, Penn State</p>
+        <h3>PriorityPro: a feature prioritization assistant for product managers</h3>
+        <p class="case-lead">Feature prioritization often comes down to whoever argues loudest. PriorityPro turns scattered feedback into scored, visual priorities that a team can discuss in one place.</p>
+        <p>I ran it as a full product lifecycle, from interviewing product managers about their needs through to testing and deployment. It's built in Adalo, with Tableau Public dashboards for prioritization scores and LiveChat for real-time collaboration.</p>
+        <ul class="tags" aria-label="Tools"><li>Adalo</li><li>Tableau Public</li><li>LiveChat</li><li>Heroku</li></ul>
+        <a class="text-link" href="https://github.com/Patangaysheetal/PriorityPro-An-Assistant-for-Strategic-Product-Management" target="_blank" rel="noopener">Read the PriorityPro case study on GitHub</a>
+      </div>
+      <div class="case-visual">
+        <ol class="steps" aria-label="How PriorityPro was built">
+          <li><div><b>Research</b><span>Interviews to define what product managers need</span></div></li>
+          <li><div><b>Design</b><span>Wireframes and navigation flows</span></div></li>
+          <li><div><b>Build</b><span>Screens, sign-in, dashboards and chat integrations</span></div></li>
+          <li><div><b>Test</b><span>Multi-device testing and peer feedback sessions</span></div></li>
+          <li><div><b>Deploy</b><span>Released on Adalo Cloud and Heroku</span></div></li>
+          <li><div><b>Iterate</b><span>Updates driven by analytics and user input</span></div></li>
+        </ol>
+      </div>
+    </article>
+
+    <article class="case case-flip">
+      <div class="case-text">
+        <p class="case-kicker">Data science, Penn State</p>
+        <h3>Which model should help decide a loan?</h3>
+        <p class="case-lead">Loan approvals can be slow and subjective. Using 4,269 loan records, I compared three predictive models to find the most accurate, transparent way to support the decision.</p>
+        <p>The neural network was the most accurate at 95.75% on validation data. Credit score was the strongest single predictor, followed by the balance between income and loan size.</p>
+        <ul class="tags" aria-label="Tools"><li>Python</li><li>IBM SPSS</li><li>Neural networks</li><li>Tableau</li></ul>
+        <a class="text-link" href="https://github.com/Patangaysheetal/Loan-Prediction-Project" target="_blank" rel="noopener">Read the loan prediction analysis on GitHub</a>
+      </div>
+      <figure class="case-visual chart">
+        <figcaption>Validation accuracy by model<span class="chart-note" style="display:block">70/30 train and test split. Scale starts at 85% to show the differences.</span></figcaption>
+        <div class="bars">
+          <div class="bar-row"><span class="bar-label">Logistic regression</span><span class="bar-val">91.2%</span><span class="bar-track" aria-hidden="true"><span class="bar" style="--v: 41.3%"></span></span></div>
+          <div class="bar-row"><span class="bar-label">Discriminant analysis</span><span class="bar-val">91.8%</span><span class="bar-track" aria-hidden="true"><span class="bar" style="--v: 45.3%"></span></span></div>
+          <div class="bar-row is-best"><span class="bar-label">Neural network</span><span class="bar-val">95.75%</span><span class="bar-track" aria-hidden="true"><span class="bar" style="--v: 71.7%"></span></span></div>
+        </div>
+        <div class="axis" aria-hidden="true"><span>85%</span><span>90%</span><span>95%</span><span>100%</span></div>
+      </figure>
+    </article>
+
+    <article class="case">
+      <div class="case-text">
+        <p class="case-kicker">Computer science, JNTU</p>
+        <h3>Privacy-preserving profile publishing</h3>
+        <p class="case-lead">Social platforms built on location data can reveal where people go. This web app lets people build social profiles and share activity while protecting their sensitive movement patterns.</p>
+        <p>Built in Java with JSP, servlets and MySQL on Apache Tomcat, it uses a heuristic publishing algorithm to share as much as possible within privacy limits, with separate admin and user experiences.</p>
+        <ul class="tags" aria-label="Tools"><li>Java</li><li>JSP &amp; Servlets</li><li>MySQL</li><li>Apache Tomcat</li></ul>
+        <a class="text-link" href="https://github.com/Patangaysheetal/Cyber-Physical-Social-System-JavaProject" target="_blank" rel="noopener">Read the project on GitHub</a>
+      </div>
+      <div class="case-visual mini-cards">
+        <div class="mini"><b>Privacy engine</b><span>Heuristic algorithm that maximizes published records within privacy constraints</span></div>
+        <div class="mini"><b>User module</b><span>Register, share photos with comments and ratings, and track friends' visited places</span></div>
+        <div class="mini"><b>Admin module</b><span>Authorize users and review location data on maps</span></div>
+      </div>
+    </article>
+    </div>
+    <div class="proj-panel" role="tabpanel" id="panel-internship" aria-labelledby="tab-internship" tabindex="0" hidden>
+    <article class="case">
+      <div class="case-text">
+        <p class="case-kicker">Data analytics, Afame Technologies internship</p>
+        <h3>Sales and HR dashboards for decision-makers</h3>
+        <p class="case-lead">Two interactive Tableau dashboards that give sales and HR teams a clear, trustworthy view of their data.</p>
+        <p>I cleaned and prepared the data in Excel and in Python on Google Colab, removing duplicates and handling missing values, then built the dashboards in Tableau.</p>
+        <ul class="tags" aria-label="Tools"><li>Tableau</li><li>Advanced Excel</li><li>Python</li><li>Google Colab</li></ul>
+        <a class="text-link" href="https://github.com/Patangaysheetal/AfameTechnologies-DataAnalystInternship" target="_blank" rel="noopener">Read the project on GitHub</a>
+      </div>
+      <div class="case-visual mini-cards">
+        <div class="mini"><b>Sales dashboard</b><span>Total sales, best-selling products, sales trends over time and revenue distribution</span></div>
+        <div class="mini"><b>HR dashboard</b><span>Employee data verification, demographics such as age, tenure and department, and key HR metrics</span></div>
+      </div>
+    </article>
+    </div>
+    <div class="proj-panel" role="tabpanel" id="panel-independent" aria-labelledby="tab-independent" tabindex="0" hidden>
+    <article class="case">
+      <div class="case-text">
+        <p class="case-kicker">Data analytics, independent project</p>
+        <h3>Tracking COVID-19 deaths and vaccinations worldwide</h3>
+        <p class="case-lead">An interactive dashboard exploring how vaccination progress relates to death rates across countries and regions.</p>
+        <p>I cleaned two Kaggle datasets in Excel, joined and queried them in SQL Server, and built the dashboard in Tableau with filters for region, country and date range.</p>
+        <ul class="tags" aria-label="Tools"><li>SQL Server</li><li>Advanced Excel</li><li>Tableau</li></ul>
+        <a class="text-link" href="https://github.com/Patangaysheetal/DataAnalyticsPersonalProjects" target="_blank" rel="noopener">Read the project on GitHub</a>
+      </div>
+      <div class="case-visual">
+        <ol class="steps" aria-label="How the dashboard was built">
+          <li><div><b>Collect</b><span>COVID-19 deaths and vaccinations datasets from Kaggle</span></div></li>
+          <li><div><b>Clean</b><span>Missing values, duplicates and consistency checks in Excel and SQL</span></div></li>
+          <li><div><b>Integrate</b><span>Joined both datasets in SQL Server for a single view</span></div></li>
+          <li><div><b>Visualize</b><span>Death trends, vaccine rollout maps and their correlation in Tableau</span></div></li>
+          <li><div><b>Validate</b><span>Checked figures and interactions for accuracy</span></div></li>
+        </ol>
+      </div>
+    </article>
+    </div>
+    <p class="work-foot"><a class="text-link" href="https://github.com/Patangaysheetal" target="_blank" rel="noopener">See all my code on GitHub</a></p>
+  </div>
+
+  </div>
+  <section class="articles-band" aria-labelledby="articles-title">
+    <div class="wrap">
+      <div class="articles-head">
+        <h2 class="h2" id="articles-title">Articles</h2>
+        <p>Reflections on careers in tech, product management and putting empathy into data.</p>
+      </div>
+      <ul class="articles">
+      <li><a href="https://www.linkedin.com/pulse/from-coding-consulting-my-journey-across-industries-strategic-f1due" target="_blank" rel="noopener"><span class="a-title">From coding to consulting: my journey across industries</span><span class="a-src">LinkedIn</span></a></li>
+      <li><a href="https://medium.com/@patangaysheetal1005/how-data-driven-empathy-can-redefine-customer-retention-in-modern-businesses-be65f2e50242" target="_blank" rel="noopener"><span class="a-title">How data-driven empathy can redefine customer retention</span><span class="a-src">Medium</span></a></li>
+      <li><a href="https://www.linkedin.com/pulse/my-path-product-management-aspiring-perspective-agile-patangay-3ww9e" target="_blank" rel="noopener"><span class="a-title">My path to product management: an aspiring perspective</span><span class="a-src">LinkedIn</span></a></li>
+      </ul>
+    </div>
+  </section>
+  <nav class="wrap pager" aria-label="Next page">
+    <a href="#/speaking"><span class="pager-label">Next</span><span class="pager-name">Speaking</span></a>
+  </nav>
+</section>
+
+<!-- PAGE: Speaking -->
+<section class="page " data-page="speaking" data-title="Speaking" hidden>
+  <header class="wrap page-head">
+    <h1 tabindex="-1">Speaking</h1>
+    <p>Talks and panels on AI, data, transportation and the people behind them. Three stages in 2026, from Central Pennsylvania to Grace Hopper.</p>
+  </header>
+  <div class="page-body">
+  <div class="wrap">
+    <article class="next-talk">
+      <div class="next-date">
+        <p class="next-flag until">Upcoming</p>
+        <p class="next-flag after">October 2026</p>
+        <p class="next-day">Oct 29</p>
+        <p class="next-time">Thursday, 9:00 a.m. PDT</p>
+      </div>
+      <div class="next-body">
+        <p class="talk-role">Speaker</p>
+        <h3>Grace Hopper Celebration 2026</h3>
+        <p class="talk-where">Anaheim, California, October 27 to 30</p>
+        <p class="talk-desc"><span class="until">Invited to speak at the world's largest gathering of women in technology, three years after first attending as a Grace Hopper scholar.</span><span class="after">Spoke at the world's largest gathering of women in technology, three years after first attending as a Grace Hopper scholar.</span></p>
+      </div>
+    </article>
+
+    <ol class="talks">
+      <li>
+        <p class="talk-date">Jul 21, 2026</p>
+        <div>
+          <p class="talk-role">Speaker</p>
+          <h3>2026 Joint ITE International and Great Lakes District Annual Meeting</h3>
+          <p class="talk-where">Detroit, Michigan. Session on advancing professional practice through innovation, collaboration and safety culture</p>
+          <p class="talk-desc">My first international conference talk, on how data and IT professionals can bring real value to transportation and to people's safety.</p>
+        </div>
+        <div class="talk-media mosaic">
+          <figure class="m-tall"><img src="assets/ite-podium.jpg" width="700" height="933" alt="Sheetal speaking at the ITE podium, with her name card reading Data Scientist and Strategy Specialist, Rensel Consulting" loading="lazy"></figure>
+          <figure><img src="assets/ite-letters.jpg" width="800" height="560" alt="Sheetal standing between giant ITE letters in the Detroit conference hall" loading="lazy"></figure>
+          <figure class="m-badge"><img src="assets/ite-badge.jpg" width="800" height="420" alt="Speaker badge of recognition for Sheetal Patangay at the 2026 Joint ITE International and Great Lakes District Annual Meeting" loading="lazy"></figure>
+        </div>
+      </li>
+      <li>
+        <p class="talk-date">2026</p>
+        <div>
+          <p class="talk-role">Speaker</p>
+          <h3>Stop solving the wrong problems: finding the balance between AI, speed and real impact</h3>
+          <p class="talk-where">Central PA Innovate 2026, Technology Council of Central Pennsylvania</p>
+          <p class="talk-desc">My first speaker session, where I introduced my CLEAR framework.</p>
+        </div>
+        <div class="talk-media pair">
+          <figure><img src="assets/innov-talk.jpg" width="800" height="877" alt="Sheetal presenting at a podium in front of a slide reading Different room. Different industry. Same problem." loading="lazy"></figure>
+          <figure><img src="assets/innov-badge.jpg" width="640" height="853" alt="Sheetal wearing a speaker badge in front of a Technology Council of Central Pennsylvania backdrop" loading="lazy"></figure>
+        </div>
+      </li>
+      <li>
+        <p class="talk-date">Mar 12, 2026</p>
+        <div>
+          <p class="talk-role">Panelist</p>
+          <h3>Give to gain: how investing in women drives innovation, performance and sustainable growth</h3>
+          <p class="talk-where">International Women's Day live panel, Cogent Infotech</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+  </div>
+  <nav class="wrap pager" aria-label="Next page">
+    <a href="#/recognition"><span class="pager-label">Next</span><span class="pager-name">Recognition</span></a>
+  </nav>
+</section>
+
+<!-- PAGE: Recognition -->
+<section class="page " data-page="recognition" data-title="Recognition" hidden>
+  <header class="wrap page-head">
+    <h1 tabindex="-1">Recognition</h1>
+    <p>Moments I'm proud of, and the communities that helped me get there.</p>
+  </header>
+  <div class="page-body">
+  <div class="wrap">
+    <div class="awards">
+      <article class="award">
+        <div class="photo"><img src="assets/award.jpg" width="1000" height="667" alt="Event screen announcing Sheetal Patangay, Data Scientist and Strategy Specialist at Rensel Consulting, as a 2025 Next Gen Award finalist" loading="lazy"></div>
+        <p class="year">2025</p>
+        <h3>Next Gen Award finalist, Women in Tech</h3>
+        <p>Recognized by the Technology Council of Central Pennsylvania for early-career impact as a Data Scientist and Strategy Specialist.</p>
+      </article>
+      <article class="award">
+        <div class="photo"><img src="assets/stage.jpg" width="1400" height="933" alt="Penn State Harrisburg commencement stage, with graduates seated in front of faculty and school banners" loading="lazy"></div>
+        <p class="year">2024</p>
+        <h3>Valedictorian student speaker</h3>
+        <p>Addressed the graduating class at Penn State Harrisburg's commencement. <strong>The first international student to receive this honor.</strong></p>
+      </article>
+    </div>
+
+    <aside class="full-circle">
+      <p class="fc-year">2026</p>
+      <p class="fc-text">A year after being named a finalist, I led the Nominations Committee for TCCP's 10th annual Women in Tech Awards, cheering on the next class of incredible women.</p>
+    </aside>
+
+    <div class="community">
+      <div>
+        <h2 class="h2">Leadership &amp; community</h2>
+        <p class="community-intro">Leadership begins with listening and grows through sharing. I spend a lot of my time helping women in tech find their voice in data and leadership.</p>
+        <div class="comm-logos">
+          <figure class="wit-banner"><img src="assets/wit.jpg" width="1024" height="467" alt="Technology Council of Central Pennsylvania Women in Tech banner" loading="lazy"></figure>
+          <figure class="logo-card anitab-card"><img src="assets/lg-anitab.png" width="390" height="152" alt="AnitaB.org logo" loading="lazy"></figure>
+        </div>
+      </div>
+      <ul class="roles-grid">
+        <li><h3>Nominations Committee Lead</h3><p class="org">Women in Tech Awards, Technology Council of Central PA, 2026</p><p>Led nominations for the council's 10th annual awards celebrating women in technology.</p></li>
+        <li><h3>Mentor</h3><p class="org">Women in Tech Committee, Technology Council of Central PA</p><p>Mentored two Penn State students in my first mentorship program, and signed up again for 2027.</p></li>
+        <li><h3>Scholar, volunteer &amp; speaker</h3><p class="org">Grace Hopper Celebration, AnitaB.org</p><p>Scholar and volunteer in 2023 and 2025, returning as a speaker in 2026.</p></li>
+        <li><h3>Board member</h3><p class="org">Women in Technology Club, Penn State Harrisburg</p><p>Advocated for inclusion, leadership and professional growth on campus.</p></li>
+      </ul>
+    </div>
+
+    <div class="moments">
+      <div class="moments-head">
+        <h2 class="h2">Community moments</h2>
+        <p>From Grace Hopper attendee in 2023 to speaker in 2026, and mentoring the next wave along the way.</p>
+      </div>
+      <ul class="gallery">
+        <li><figure><img src="assets/g-ghc23.jpg" width="760" height="1013" alt="Sheetal in the Grace Hopper Celebration 2023 expo hall" loading="lazy"><figcaption>Grace Hopper Celebration 2023</figcaption></figure></li>
+        <li><figure><img src="assets/g-ghc25group.jpg" width="640" height="853" alt="Sheetal with three fellow attendees at Grace Hopper Celebration 2025" loading="lazy"><figcaption>Grace Hopper Celebration 2025</figcaption></figure></li>
+        <li><figure><img src="assets/g-ghc25selfie.jpg" width="640" height="853" alt="Group selfie of Sheetal with five fellow attendees at Grace Hopper Celebration 2025" loading="lazy"><figcaption>New friends at Grace Hopper 2025</figcaption></figure></li>
+        <li><figure><img src="assets/g-nextgen.jpg" width="640" height="881" alt="Sheetal with two colleagues in front of a Technology Council of Central Pennsylvania backdrop at the awards night" loading="lazy"><figcaption>Next Gen Awards night, 2025</figcaption></figure></li>
+        <li><figure><img src="assets/g-lydia.jpg" width="640" height="841" alt="Sheetal and a mentee working through a Women in Tech mentor program activity sheet" loading="lazy"><figcaption>TCCP Women in Tech mentor program</figcaption></figure></li>
+        <li><figure><img src="assets/g-vina.jpg" width="640" height="941" alt="Sheetal with a fellow participant at a Technology Council of Central Pennsylvania event" loading="lazy"><figcaption>Mentor program event, TCCP</figcaption></figure></li>
+        <li><figure><img src="assets/g-sponsor.jpg" width="640" height="925" alt="Sheetal, wearing a sponsor badge, with another attendee under a balloon arch at a Technology Council of Central Pennsylvania celebration" loading="lazy"><figcaption>Representing Rensel as a sponsor at a TCCP celebration</figcaption></figure></li>
+        <li><figure><img src="assets/g-tccpgroup.jpg" width="640" height="851" alt="Sheetal with three women beside a Technology Council of Central Pennsylvania banner" loading="lazy"><figcaption>With the Technology Council of Central PA community</figcaption></figure></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <nav class="wrap pager" aria-label="Next page">
+    <a href="#/certifications"><span class="pager-label">Next</span><span class="pager-name">Certifications</span></a>
+  </nav>
+</section>
+
+<!-- PAGE: Certifications -->
+<section class="page " data-page="certifications" data-title="Certifications" hidden>
+  <header class="wrap page-head">
+    <h1 tabindex="-1">Certifications</h1>
+    <p>Six certifications across project management, leadership, data and AI, with my PMP next. Each one is verifiable on LinkedIn.</p>
+  </header>
+  <div class="page-body">
+  <div class="wrap">
+    <section class="cert-progress" aria-labelledby="cert-progress-title">
+      <h2 class="cert-section-title" id="cert-progress-title">In progress</h2>
+      <ul class="cert-grid">
+      <li class="cert is-progress">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="ring3" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <circle cx="60" cy="60" r="57" class="b-outer"/>
+            <circle cx="60" cy="60" r="36" class="b-inner"/>
+            <text class="b-ring"><textPath href="#ring3" startOffset="1%" textLength="262" lengthAdjust="spacing">PROJECT MANAGEMENT PROFESSIONAL · IN PROGRESS ·</textPath></text>
+            <text x="60" y="67" text-anchor="middle" class="b-mark">PMP</text>
+          </svg>
+        </div>
+        <div class="cert-body">
+          <p class="cert-status">In progress</p>
+          <h4>Project Management Professional (PMP)<sup class="reg">&reg;</sup></h4>
+          <p class="cert-issuer">Project Management Institute (PMI)</p>
+          <p class="cert-desc">The next step after CAPM, building on hands-on experience managing client projects.</p>
+        </div>
+      </li>
+      </ul>
+    </section>
+
+    <section class="cert-earned" aria-labelledby="cert-earned-title">
+      <h2 class="cert-section-title" id="cert-earned-title">Earned certifications</h2>
+    <div class="cert-group">
+      <h3 class="cert-group-title">Project management &amp; leadership</h3>
+      <ul class="cert-grid">
+      <li class="cert is-credential">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="cr1" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <circle cx="60" cy="60" r="57" class="b-outer"/>
+            <circle cx="60" cy="60" r="36" class="b-inner"/>
+            <text class="b-ring"><textPath href="#cr1" startOffset="1%" textLength="262" lengthAdjust="spacing">CERTIFIED ASSOCIATE IN PROJECT MANAGEMENT ·</textPath></text>
+            <text x="60" y="67" text-anchor="middle" class="b-mark">CAPM</text>
+          </svg>
+        </div>
+        <div class="cert-body">
+          <p class="cert-status">Certified</p>
+          <h4>Certified Associate in Project Management (CAPM)<sup class="reg">&reg;</sup></h4>
+          <p class="cert-issuer">Project Management Institute (PMI)</p>
+          <p class="cert-date">Issued Jan 2026, valid through Dec 2029</p>
+          <p class="cert-desc">Demonstrated knowledge of project management fundamentals, including scope, time, cost, quality, risk and integration management.</p>
+          <a class="text-link" href="https://www.linkedin.com/in/sheetal-patangay/details/certifications/" target="_blank" rel="noopener">Verify on LinkedIn</a>
+        </div>
+      </li>
+      <li class="cert ">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="cr2" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <circle cx="60" cy="60" r="57" class="b-outer"/>
+            <circle cx="60" cy="60" r="36" class="b-inner"/>
+            <text class="b-ring"><textPath href="#cr2" startOffset="1%" textLength="262" lengthAdjust="spacing">GOOGLE PROJECT MANAGEMENT · CERTIFICATE ·</textPath></text>
+            <text x="60" y="69" text-anchor="middle" class="b-mark b-mark-lg">PM</text>
+          </svg>
+        </div>
+        <div class="cert-body">
+          <p class="cert-status">Certificate</p>
+          <h4>Google Project Management</h4>
+          <p class="cert-issuer">Google</p>
+          <p class="cert-date">Issued Jul 2023</p>
+          <ul class="tags cert-tags" aria-label="Skills"><li>Agile Project Management</li><li>Strategic Thinking</li></ul>
+          <a class="text-link" href="https://www.linkedin.com/in/sheetal-patangay/details/certifications/" target="_blank" rel="noopener">Verify on LinkedIn</a>
+        </div>
+      </li>
+      <li class="cert ">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="cr3" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <circle cx="60" cy="60" r="57" class="b-outer"/>
+            <circle cx="60" cy="60" r="36" class="b-inner"/>
+            <text class="b-ring"><textPath href="#cr3" startOffset="1%" textLength="262" lengthAdjust="spacing">EMERGING LEADERS CERTIFICATION · TRUIST ·</textPath></text>
+            <text x="60" y="69" text-anchor="middle" class="b-mark b-mark-lg">EL</text>
+          </svg>
+        </div>
+        <div class="cert-body">
+          <p class="cert-status">Certificate</p>
+          <h4>Emerging Leaders Certification</h4>
+          <p class="cert-issuer">Truist Leadership Institute</p>
+          <p class="cert-date">Issued Apr 2023</p>
+          <ul class="tags cert-tags" aria-label="Skills"><li>Product Strategy</li><li>Growth Mindset</li></ul>
+          <a class="text-link" href="https://www.linkedin.com/in/sheetal-patangay/details/certifications/" target="_blank" rel="noopener">Verify on LinkedIn</a>
+        </div>
+      </li>
+      </ul>
+    </div>
+    <div class="cert-group">
+      <h3 class="cert-group-title">Data &amp; analytics</h3>
+      <ul class="cert-grid">
+      <li class="cert ">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="cr4" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <circle cx="60" cy="60" r="57" class="b-outer"/>
+            <circle cx="60" cy="60" r="36" class="b-inner"/>
+            <text class="b-ring"><textPath href="#cr4" startOffset="1%" textLength="262" lengthAdjust="spacing">DATA VISUALIZATION FOR DATA ANALYSIS AND ANALYTICS ·</textPath></text>
+            <text x="60" y="69" text-anchor="middle" class="b-mark b-mark-lg">DV</text>
+          </svg>
+        </div>
+        <div class="cert-body">
+          <p class="cert-status">Certificate</p>
+          <h4>Data Visualization for Data Analysis and Analytics</h4>
+          <p class="cert-issuer">LinkedIn</p>
+          <p class="cert-date">Issued Oct 2023</p>
+          <ul class="tags cert-tags" aria-label="Skills"><li>Lookups</li><li>Analyze Information</li></ul>
+          <a class="text-link" href="https://www.linkedin.com/in/sheetal-patangay/details/certifications/" target="_blank" rel="noopener">Verify on LinkedIn</a>
+        </div>
+      </li>
+      <li class="cert ">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="cr5" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <circle cx="60" cy="60" r="57" class="b-outer"/>
+            <circle cx="60" cy="60" r="36" class="b-inner"/>
+            <text class="b-ring"><textPath href="#cr5" startOffset="1%" textLength="262" lengthAdjust="spacing">DATA ANALYTICS FOR BUSINESS PROFESSIONALS ·</textPath></text>
+            <text x="60" y="69" text-anchor="middle" class="b-mark b-mark-lg">DA</text>
+          </svg>
+        </div>
+        <div class="cert-body">
+          <p class="cert-status">Certificate</p>
+          <h4>Data Analytics for Business Professionals</h4>
+          <p class="cert-issuer">LinkedIn</p>
+          <p class="cert-date">Issued Sep 2023</p>
+          <ul class="tags cert-tags" aria-label="Skills"><li>VBA Excel</li><li>Analyze Information</li></ul>
+          <a class="text-link" href="https://www.linkedin.com/in/sheetal-patangay/details/certifications/" target="_blank" rel="noopener">Verify on LinkedIn</a>
+        </div>
+      </li>
+      </ul>
+    </div>
+    <div class="cert-group">
+      <h3 class="cert-group-title">Product &amp; AI</h3>
+      <ul class="cert-grid">
+      <li class="cert ">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="cr6" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <circle cx="60" cy="60" r="57" class="b-outer"/>
+            <circle cx="60" cy="60" r="36" class="b-inner"/>
+            <text class="b-ring"><textPath href="#cr6" startOffset="1%" textLength="262" lengthAdjust="spacing">AI FOR PRODUCT MANAGEMENT · PENDO.IO ·</textPath></text>
+            <text x="60" y="69" text-anchor="middle" class="b-mark b-mark-lg">AI</text>
+          </svg>
+        </div>
+        <div class="cert-body">
+          <p class="cert-status">Certificate</p>
+          <h4>AI for Product Management</h4>
+          <p class="cert-issuer">Pendo.io</p>
+          <p class="cert-date">Issued Aug 2024</p>
+          <p class="cert-desc">Takeaways include incorporating AI technologies into product development.</p>
+          <a class="text-link" href="https://www.linkedin.com/in/sheetal-patangay/details/certifications/" target="_blank" rel="noopener">Verify on LinkedIn</a>
+        </div>
+      </li>
+      </ul>
+    </div>
+    </section>
+
+    <div class="cert-all">
+      <p>See my full, verified list of licenses and certifications on LinkedIn.</p>
+      <a class="btn" href="https://www.linkedin.com/in/sheetal-patangay/details/certifications/" target="_blank" rel="noopener">View all certifications</a>
+    </div>
+  </div>
+  </div>
+  <nav class="wrap pager" aria-label="Next page">
+    <a href="#/contact"><span class="pager-label">Next</span><span class="pager-name">Contact</span></a>
+  </nav>
+</section>
+
+<!-- PAGE: Contact -->
+<section class="page page-contact" data-page="contact" data-title="Contact" hidden>
+  <div class="wrap contact-grid">
+    <div>
+      <h1 tabindex="-1">Let's talk.</h1>
+      <p class="lead">Working on something exciting, building with data, or just want to trade ideas? I'd love to hear from you.</p>
+      <a class="email-link" href="mailto:connect.sheetal1005@gmail.com">connect.sheetal1005@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/sheetal-patangay/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.16-.02-2.64-1.61-2.64-1.61 0-1.86 1.26-1.86 2.56v4.92h-3.93v-11Z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Patangaysheetal" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <figure class="contact-photo">
+      <div class="arch"><img src="assets/contact.jpg" width="658" height="1024" alt="Portrait of Sheetal in a black turtleneck in front of a colorful mural" loading="lazy"></div>
+    </figure>
+  </div>
+  <nav class="wrap pager" aria-label="Next page">
+    <a href="#/"><span class="pager-label">Back to</span><span class="pager-name">Home</span></a>
+  </nav>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="motto">Aspire to inspire.</p>
+    <ul class="footer-links">
+      <li><a href="mailto:connect.sheetal1005@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/sheetal-patangay/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/Patangaysheetal" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <p class="copy">&copy; <span id="year">2026</span> Sheetal Patangay</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var toggle = document.getElementById("themeToggle");
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  function themeNow() {
+    if (root.classList.contains("sp-dark")) return "dark";
+    if (root.classList.contains("sp-light")) return "light";
+    var set = root.getAttribute("data-theme");
+    if (set === "light" || set === "dark") return set;
+    return mq && mq.matches ? "dark" : "light";
+  }
+  function label() {
+    toggle.setAttribute("aria-label", themeNow() === "dark" ? "Switch to light theme" : "Switch to dark theme");
+  }
+  label();
+  toggle.addEventListener("click", function () {
+    var next = themeNow() === "dark" ? "light" : "dark";
+    root.classList.remove("sp-dark", "sp-light");
+    root.classList.add("sp-" + next);
+    try { localStorage.setItem("sp-theme", next); } catch (e) {}
+    label();
+  });
+  if (mq && mq.addEventListener) mq.addEventListener("change", label);
+
+  var header = document.getElementById("siteHeader");
+  function onScroll() { header.classList.toggle("is-scrolled", window.scrollY > 8); }
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  // Talks after Grace Hopper 2026 switch to past tense automatically.
+  if (Date.now() > Date.parse("2026-10-31T07:00:00Z")) root.classList.add("is-past");
+
+  // ---------- Pages ----------
+  var pages = {};
+  Array.prototype.forEach.call(document.querySelectorAll(".page"), function (el) { pages[el.getAttribute("data-page")] = el; });
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll("[data-nav]"));
+  var currentPage = null;
+
+  var aliases = { work: "projects" };
+  function parseHash() {
+    var parts = location.hash.replace(/^#\/?/, "").split("/");
+    var page = aliases[parts[0]] || parts[0];
+    if (page === "") return { page: "home" };
+    return pages[page] ? { page: page, tab: parts[1] || null } : null; // unknown anchors leave the page as is
+  }
+
+  // Project category tabs
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".proj-tab"));
+  function selectTab(key, focus) {
+    var found = tabs.some(function (t) { return t.getAttribute("data-tab") === key; });
+    if (!found) return;
+    tabs.forEach(function (t) {
+      var on = t.getAttribute("data-tab") === key;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+      if (on && focus) t.focus();
+    });
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () {
+      var key = t.getAttribute("data-tab");
+      selectTab(key);
+      if (history.replaceState) history.replaceState(null, "", "#/projects/" + key);
+    });
+    t.addEventListener("keydown", function (e) {
+      var d = e.key === "ArrowRight" || e.key === "ArrowDown" ? 1 : e.key === "ArrowLeft" || e.key === "ArrowUp" ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      var nextTab = tabs[(i + d + tabs.length) % tabs.length];
+      selectTab(nextTab.getAttribute("data-tab"), true);
+      if (history.replaceState) history.replaceState(null, "", "#/projects/" + nextTab.getAttribute("data-tab"));
+    });
+  });
+
+  function show(name, isFirst) {
+    if (!name || name === currentPage) return;
+    Object.keys(pages).forEach(function (k) { pages[k].hidden = k !== name; pages[k].classList.remove("is-entering"); });
+    var page = pages[name];
+    var label = page.getAttribute("data-title");
+    document.title = label ? label + " | Sheetal Patangay" : baseTitle;
+    navLinks.forEach(function (a) {
+      var on = a.getAttribute("data-nav") === name;
+      if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+      if (a.parentNode) { if (on) a.parentNode.setAttribute("data-current", ""); else a.parentNode.removeAttribute("data-current"); }
+    });
+    var activeBtn = document.querySelector('.ribbon-list a[data-nav="' + name + '"]');
+    var list = document.querySelector(".ribbon-list");
+    if (activeBtn && list && list.scrollWidth > list.clientWidth) {
+      list.scrollLeft = activeBtn.offsetLeft - (list.clientWidth - activeBtn.offsetWidth) / 2;
+    }
+    if (!isFirst) {
+      root.classList.add("seen");
+      void page.offsetWidth;
+      page.classList.add("is-entering");
+      window.scrollTo(0, 0);
+      var h1 = page.querySelector("h1");
+      if (h1) h1.focus({ preventScroll: true });
+    }
+    currentPage = name;
+  }
+
+  var baseTitle = document.title;
+  function go(isFirst) {
+    var r = parseHash();
+    if (!r) { if (isFirst) show("home", true); return; }
+    show(r.page, isFirst);
+    if (r.page === "projects") selectTab(r.tab || "academic");
+  }
+  window.addEventListener("hashchange", function () { go(false); });
+  go(true);
+  if (currentPage !== "home") root.classList.add("seen");
+
+  var y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
